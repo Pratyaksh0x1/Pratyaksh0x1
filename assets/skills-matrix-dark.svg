@@ -78,7 +78,7 @@
 
     <!-- Labels -->
     <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Python</text>
-    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Data & ML</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Data &amp; ML</text>
   </g>
 
   <g transform="translate(529.5, 80)" class="skill-tile" filter="url(#tile-shadow)">
@@ -117,9 +117,9 @@
     <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Async Dynamic</text>
   </g>
 
-  <!-- Category: 基盤 // RUNTIMES & BACKEND FRAMEWORKS -->
+  <!-- Category: 基盤 // RUNTIMES &amp; BACKEND FRAMEWORKS -->
   <g transform="translate(24, 152)">
-    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">基盤 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// RUNTIMES & BACKEND FRAMEWORKS</tspan></text>
+    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">基盤 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// RUNTIMES &amp; BACKEND FRAMEWORKS</tspan></text>
   </g>
 
   <g transform="translate(24.0, 170)" class="skill-tile" filter="url(#tile-shadow)">
@@ -186,7 +186,7 @@
     
     <!-- Tech Logo Vector -->
     <g transform="translate(44, 11)">
-      <path d="M10 3V8L5 18C4 20 5.5 21.5 7.5 21.5H16.5C18.5 21.5 20 20 19 18L14 8V3H10Z" fill="none" stroke="{category_sub_fill}" stroke-width="1.8" /><path d="M6.5 16C8 15 11 17 13 16C15 15 16.5 15.5 17.5 16" stroke="{category_sub_fill}" stroke-width="1.5" stroke-linecap="round" fill="none" /><circle cx="10" cy="18" r="1" fill="{category_sub_fill}" /><circle cx="14" cy="17.5" r="0.8" fill="{category_sub_fill}" />
+      <path d="M10 3V8L5 18C4 20 5.5 21.5 7.5 21.5H16.5C18.5 21.5 20 20 19 18L14 8V3H10Z" fill="none" stroke="#E0503D" stroke-width="1.8" /><path d="M6.5 16C8 15 11 17 13 16C15 15 16.5 15.5 17.5 16" stroke="#E0503D" stroke-width="1.5" stroke-linecap="round" fill="none" /><circle cx="10" cy="18" r="1" fill="#E0503D" /><circle cx="14" cy="17.5" r="0.8" fill="#E0503D" />
     </g>
 
     <!-- Labels -->
@@ -194,9 +194,9 @@
     <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Micro Engine</text>
   </g>
 
-  <!-- Category: 知能 // ARTIFICIAL INTELLIGENCE & DATA -->
+  <!-- Category: 知能 // ARTIFICIAL INTELLIGENCE &amp; DATA -->
   <g transform="translate(24, 242)">
-    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">知能 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// ARTIFICIAL INTELLIGENCE & DATA</tspan></text>
+    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">知能 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// ARTIFICIAL INTELLIGENCE &amp; DATA</tspan></text>
   </g>
 
   <g transform="translate(24.0, 260)" class="skill-tile" filter="url(#tile-shadow)">
@@ -227,11 +227,11 @@
     
     <!-- Tech Logo Vector -->
     <g transform="translate(44, 11)">
-      <circle cx="12" cy="12" r="10" fill="#1E1E2E" stroke="{gold_accent}" stroke-width="1.2" /><circle cx="12" cy="12" r="6" stroke="#E0503D" stroke-width="1" stroke-dasharray="2 2" fill="none" /><circle cx="12" cy="12" r="2.5" fill="{gold_accent}" /><path d="M12 2V6M12 18V22M2 12H6M18 12H22" stroke="{gold_accent}" stroke-width="1.2" />
+      <circle cx="12" cy="12" r="10" fill="#1E1E2E" stroke="#D4AF37" stroke-width="1.2" /><circle cx="12" cy="12" r="6" stroke="#E0503D" stroke-width="1" stroke-dasharray="2 2" fill="none" /><circle cx="12" cy="12" r="2.5" fill="#D4AF37" /><path d="M12 2V6M12 18V22M2 12H6M18 12H22" stroke="#D4AF37" stroke-width="1.2" />
     </g>
 
     <!-- Labels -->
-    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">RAG & Ollama</text>
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">RAG &amp; Ollama</text>
     <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Vector Search</text>
   </g>
 
@@ -271,9 +271,9 @@
     <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Data Frames</text>
   </g>
 
-  <!-- Category: 兵站 // STORAGE, TOOLS & INFRASTRUCTURE -->
+  <!-- Category: 兵站 // STORAGE, TOOLS &amp; INFRASTRUCTURE -->
   <g transform="translate(24, 332)">
-    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">兵站 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// STORAGE, TOOLS & INFRASTRUCTURE</tspan></text>
+    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">兵站 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// STORAGE, TOOLS &amp; INFRASTRUCTURE</tspan></text>
   </g>
 
   <g transform="translate(24.0, 350)" class="skill-tile" filter="url(#tile-shadow)">
@@ -326,7 +326,7 @@
     </g>
 
     <!-- Labels -->
-    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Git & GitHub</text>
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Git &amp; GitHub</text>
     <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Version Tree</text>
   </g>
 
@@ -340,11 +340,11 @@
     
     <!-- Tech Logo Vector -->
     <g transform="translate(44, 11)">
-      <rect x="2" y="2" width="20" height="20" rx="4" fill="#222222" /><path d="M6 7L10 11L6 15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" /><line x1="12" y1="15" x2="18" y2="15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" />
+      <rect x="2" y="2" width="20" height="20" rx="4" fill="#222222" /><path d="M6 7L10 11L6 15" stroke="#E0503D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" /><line x1="12" y1="15" x2="18" y2="15" stroke="#E0503D" stroke-width="2" stroke-linecap="round" />
     </g>
 
     <!-- Labels -->
-    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Linux & OS</text>
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Linux &amp; OS</text>
     <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Kernel Runtime</text>
   </g>
 </svg>

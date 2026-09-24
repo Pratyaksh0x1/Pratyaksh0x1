@@ -1,6 +1,7 @@
 """
 Generates high-precision Japanese-styled Skill Matrix SVGs for both Dark and Light themes.
 Features authentic Japanese Hanko seals, vector tech logos, and bilingual typography.
+Guarantees 100% strictly valid XML (all ampersands properly escaped as &amp;).
 """
 
 def generate_svg(theme="dark"):
@@ -57,7 +58,7 @@ def generate_svg(theme="dark"):
                     "logo": '''<polygon points="12,1 22,6.5 22,17.5 12,23 2,17.5 2,6.5" fill="#00599C" /><path d="M9.5 8C8.5 7.2 7 7.2 5.8 7.8C4.5 8.5 3.8 9.8 3.8 11.8C3.8 14.2 5 15.5 7.2 15.5C8.4 15.5 9.5 14.8 10 14" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" /><path d="M12.5 11.8H15.5M14 10.3V13.3M17.5 11.8H20.5M19 10.3V13.3" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" />'''
                 },
                 {
-                    "kanji": "蛇", "name": "Python", "sub": "Data & ML",
+                    "kanji": "蛇", "name": "Python", "sub": "Data &amp; ML",
                     "logo": '''<path d="M11.8 2.2C6.8 2.2 7.1 4.4 7.1 4.4L7.1 6.6H12V7.4H4.5C4.5 7.4 2 7.1 2 12C2 16.8 4.2 16.6 4.2 16.6H5.7L5.7 14.3C5.7 11.6 8.1 11.6 8.1 11.6H13C13 11.6 15.2 11.7 15.2 9.5C15.2 7.3 15.2 4.4 15.2 4.4C15.2 4.4 15.5 2.2 11.8 2.2ZM9.4 3.7C9.9 3.7 10.3 4.1 10.3 4.6C10.3 5.1 9.9 5.5 9.4 5.5C8.9 5.5 8.5 5.1 8.5 4.6C8.5 4.1 8.9 3.7 9.4 3.7Z" fill="#387EB8"/><path d="M12.2 21.8C17.2 21.8 16.9 19.6 16.9 19.6L16.9 17.4H12V16.6H19.5C19.5 16.6 22 16.9 22 12C22 7.2 19.8 7.4 19.8 7.4H18.3L18.3 9.7C18.3 12.4 15.9 12.4 15.9 12.4H11C11 11.6 8.8 12.3 8.8 14.5C8.8 16.7 8.8 19.6 8.8 19.6C8.8 19.6 8.5 21.8 12.2 21.8ZM14.6 20.3C14.1 20.3 13.7 19.9 13.7 19.4C13.7 18.9 14.1 18.5 14.6 18.5C15.1 18.5 15.5 18.9 15.5 19.4C15.5 19.9 15.1 20.3 14.6 20.3Z" fill="#FFE052"/>'''
                 },
                 {
@@ -72,7 +73,7 @@ def generate_svg(theme="dark"):
         },
         {
             "name": "基盤",
-            "en": "RUNTIMES & BACKEND FRAMEWORKS",
+            "en": "RUNTIMES &amp; BACKEND FRAMEWORKS",
             "y": 152,
             "skills": [
                 {
@@ -89,13 +90,13 @@ def generate_svg(theme="dark"):
                 },
                 {
                     "kanji": "瓶", "name": "Flask", "sub": "Micro Engine",
-                    "logo": '''<path d="M10 3V8L5 18C4 20 5.5 21.5 7.5 21.5H16.5C18.5 21.5 20 20 19 18L14 8V3H10Z" fill="none" stroke="{category_sub_fill}" stroke-width="1.8" /><path d="M6.5 16C8 15 11 17 13 16C15 15 16.5 15.5 17.5 16" stroke="{category_sub_fill}" stroke-width="1.5" stroke-linecap="round" fill="none" /><circle cx="10" cy="18" r="1" fill="{category_sub_fill}" /><circle cx="14" cy="17.5" r="0.8" fill="{category_sub_fill}" />'''
+                    "logo": f'''<path d="M10 3V8L5 18C4 20 5.5 21.5 7.5 21.5H16.5C18.5 21.5 20 20 19 18L14 8V3H10Z" fill="none" stroke="{category_sub_fill}" stroke-width="1.8" /><path d="M6.5 16C8 15 11 17 13 16C15 15 16.5 15.5 17.5 16" stroke="{category_sub_fill}" stroke-width="1.5" stroke-linecap="round" fill="none" /><circle cx="10" cy="18" r="1" fill="{category_sub_fill}" /><circle cx="14" cy="17.5" r="0.8" fill="{category_sub_fill}" />'''
                 }
             ]
         },
         {
             "name": "知能",
-            "en": "ARTIFICIAL INTELLIGENCE & DATA",
+            "en": "ARTIFICIAL INTELLIGENCE &amp; DATA",
             "y": 242,
             "skills": [
                 {
@@ -103,8 +104,8 @@ def generate_svg(theme="dark"):
                     "logo": '''<rect x="2" y="2" width="20" height="20" rx="5" fill="#1C3C3C" /><path d="M6 14L10 10M14 10L18 14M8 12C8 9.5 10.5 7 13 7M11 17C13.5 17 16 14.5 16 12" stroke="#2ED1A2" stroke-width="1.8" stroke-linecap="round" fill="none" /><circle cx="14" cy="9" r="1.5" fill="#2ED1A2" />'''
                 },
                 {
-                    "kanji": "索", "name": "RAG & Ollama", "sub": "Vector Search",
-                    "logo": '''<circle cx="12" cy="12" r="10" fill="#1E1E2E" stroke="{gold_accent}" stroke-width="1.2" /><circle cx="12" cy="12" r="6" stroke="#E0503D" stroke-width="1" stroke-dasharray="2 2" fill="none" /><circle cx="12" cy="12" r="2.5" fill="{gold_accent}" /><path d="M12 2V6M12 18V22M2 12H6M18 12H22" stroke="{gold_accent}" stroke-width="1.2" />'''
+                    "kanji": "索", "name": "RAG &amp; Ollama", "sub": "Vector Search",
+                    "logo": f'''<circle cx="12" cy="12" r="10" fill="#1E1E2E" stroke="{gold_accent}" stroke-width="1.2" /><circle cx="12" cy="12" r="6" stroke="#E0503D" stroke-width="1" stroke-dasharray="2 2" fill="none" /><circle cx="12" cy="12" r="2.5" fill="{gold_accent}" /><path d="M12 2V6M12 18V22M2 12H6M18 12H22" stroke="{gold_accent}" stroke-width="1.2" />'''
                 },
                 {
                     "kanji": "智", "name": "scikit-learn", "sub": "Predictive ML",
@@ -118,7 +119,7 @@ def generate_svg(theme="dark"):
         },
         {
             "name": "兵站",
-            "en": "STORAGE, TOOLS & INFRASTRUCTURE",
+            "en": "STORAGE, TOOLS &amp; INFRASTRUCTURE",
             "y": 332,
             "skills": [
                 {
@@ -130,12 +131,12 @@ def generate_svg(theme="dark"):
                     "logo": '''<circle cx="12" cy="12" r="10" fill="#00758F" /><path d="M7 15C9 13.5 11 13 14 13.5C16 14 17.5 13 18 11.5C18.5 10 17.5 9 15.5 9C13 9 11.5 11 9 11.5C7.5 11.8 6.5 11 6 10" stroke="#F29111" stroke-width="1.8" stroke-linecap="round" fill="none" />'''
                 },
                 {
-                    "kanji": "枝", "name": "Git & GitHub", "sub": "Version Tree",
+                    "kanji": "枝", "name": "Git &amp; GitHub", "sub": "Version Tree",
                     "logo": '''<rect x="3" y="3" width="18" height="18" rx="4" transform="rotate(45 12 12)" fill="#F05032" /><path d="M12 7V17M12 12L15 9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" /><circle cx="12" cy="7" r="2" fill="#FFFFFF" /><circle cx="12" cy="17" r="2" fill="#FFFFFF" /><circle cx="15" cy="9" r="2" fill="#FFFFFF" />'''
                 },
                 {
-                    "kanji": "極", "name": "Linux & OS", "sub": "Kernel Runtime",
-                    "logo": '''<rect x="2" y="2" width="20" height="20" rx="4" fill="#222222" /><path d="M6 7L10 11L6 15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" /><line x1="12" y1="15" x2="18" y2="15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" />'''
+                    "kanji": "極", "name": "Linux &amp; OS", "sub": "Kernel Runtime",
+                    "logo": f'''<rect x="2" y="2" width="20" height="20" rx="4" fill="#222222" /><path d="M6 7L10 11L6 15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" /><line x1="12" y1="15" x2="18" y2="15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" />'''
                 }
             ]
         }
