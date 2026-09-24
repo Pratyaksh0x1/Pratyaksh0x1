@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 74" width="100%" height="74" fill="none">
+  <defs>
+    <linearGradient id="radio-bg-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F6F0" />
+      <stop offset="100%" stop-color="#EDE7DC" />
+    </linearGradient>
+
+    <style>
+      @keyframes eq-jump-1 { 0%, 100% { height: 6px; } 50% { height: 26px; } }
+      @keyframes eq-jump-2 { 0%, 100% { height: 22px; } 50% { height: 8px; } }
+      @keyframes eq-jump-3 { 0%, 100% { height: 14px; } 50% { height: 30px; } }
+      @keyframes eq-jump-4 { 0%, 100% { height: 28px; } 50% { height: 10px; } }
+      @keyframes tape-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+      .b1 { animation: eq-jump-1 1.2s ease-in-out infinite; }
+      .b2 { animation: eq-jump-2 0.9s ease-in-out infinite; }
+      .b3 { animation: eq-jump-3 1.4s ease-in-out infinite; }
+      .b4 { animation: eq-jump-4 1.1s ease-in-out infinite; }
+      .b5 { animation: eq-jump-2 1.3s ease-in-out infinite; }
+      .b6 { animation: eq-jump-1 0.8s ease-in-out infinite; }
+      .b7 { animation: eq-jump-3 1.5s ease-in-out infinite; }
+      .b8 { animation: eq-jump-4 1.0s ease-in-out infinite; }
+
+      .tape-reel {
+        animation: tape-spin 6s linear infinite;
+        transform-origin: center;
+      }
+      .font-mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, monospace; }
+      .font-kanji { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="74" rx="10" fill="url(#radio-bg-light)" stroke="#DDD6C8" stroke-width="1.2" />
+
+  <g transform="translate(24, 18)">
+    <rect x="0" y="0" width="56" height="38" rx="5" fill="#E8E1D5" stroke="#D3CCC0" stroke-width="1.2" />
+    <rect x="12" y="8" width="32" height="22" rx="3" fill="#D5CEC2" />
+    <g transform="translate(20, 19)">
+      <circle cx="0" cy="0" r="6" fill="#BCB5A8" />
+      <g class="tape-reel">
+        <circle cx="0" cy="0" r="3" fill="#C8382B" />
+        <line x1="-5" y1="0" x2="5" y2="0" stroke="#FAF7F2" stroke-width="0.8" />
+        <line x1="0" y1="-5" x2="0" y2="5" stroke="#FAF7F2" stroke-width="0.8" />
+      </g>
+    </g>
+    <g transform="translate(36, 19)">
+      <circle cx="0" cy="0" r="6" fill="#BCB5A8" />
+      <g class="tape-reel">
+        <circle cx="0" cy="0" r="3" fill="#C8382B" />
+        <line x1="-5" y1="0" x2="5" y2="0" stroke="#FAF7F2" stroke-width="0.8" />
+        <line x1="0" y1="-5" x2="0" y2="5" stroke="#FAF7F2" stroke-width="0.8" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(98, 26)">
+    <text x="0" y="0" class="font-kanji" font-size="11" fill="#756F67" letter-spacing="2">
+      真夜中の電脳空間 // TRANSMISSION 03:14 AM
+    </text>
+    <text x="0" y="24" class="font-mono" font-size="13" font-weight="600" fill="#1C1B19">
+      COLD CUTTING CHAI &amp; AMBIENT SYNTH <tspan fill="#C8382B">·</tspan> <tspan font-weight="400" font-size="11.5" fill="#756F67">ZERO NOTIFICATIONS ON REPEAT</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(800, 52)">
+    <rect x="0" y="-30" width="3" height="15" rx="1.5" fill="#C8382B" class="b1" />
+    <rect x="6" y="-30" width="3" height="25" rx="1.5" fill="#C8382B" class="b2" />
+    <rect x="12" y="-30" width="3" height="10" rx="1.5" fill="#1C1B19" class="b3" />
+    <rect x="18" y="-30" width="3" height="28" rx="1.5" fill="#C8382B" class="b4" />
+    <rect x="24" y="-30" width="3" height="12" rx="1.5" fill="#756F67" class="b5" />
+    <rect x="30" y="-30" width="3" height="22" rx="1.5" fill="#C8382B" class="b6" />
+    <rect x="36" y="-30" width="3" height="16" rx="1.5" fill="#1C1B19" class="b7" />
+    <rect x="42" y="-30" width="3" height="20" rx="1.5" fill="#C8382B" class="b8" />
+  </g>
+</svg>

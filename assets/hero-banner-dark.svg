@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="100%" height="300" fill="none">
+  <defs>
+    <!-- Background Gradient: Deep Sumi Night -->
+    <linearGradient id="bg-sumi-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E0D13" />
+      <stop offset="60%" stop-color="#15131C" />
+      <stop offset="100%" stop-color="#1A1824" />
+    </linearGradient>
+
+    <!-- Moon Glow Gradient -->
+    <radialGradient id="moon-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8E3D8" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#E8E3D8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#E8E3D8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Torii Gate Vermilion Gradient -->
+    <linearGradient id="torii-red" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F05A47" />
+      <stop offset="100%" stop-color="#C23627" />
+    </linearGradient>
+
+    <!-- Organic Hanko Seal Texture -->
+    <filter id="hanko-rough-hero" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <!-- Sakura Petal Shape -->
+    <path id="sakura-petal" d="M0,0 C3,-8 10,-10 12,-4 C14,2 6,10 0,14 C-6,10 -14,2 -12,-4 C-10,-10 -3,-8 0,0 Z" />
+  </defs>
+
+  <style>
+    @keyframes petal-fall-1 {
+      0% { transform: translate(0px, -20px) rotate(0deg) scale(0.7); opacity: 0; }
+      15% { opacity: 0.85; }
+      85% { opacity: 0.8; }
+      100% { transform: translate(-260px, 320px) rotate(420deg) scale(0.7); opacity: 0; }
+    }
+    @keyframes petal-fall-2 {
+      0% { transform: translate(0px, -20px) rotate(45deg) scale(0.9); opacity: 0; }
+      20% { opacity: 0.9; }
+      80% { opacity: 0.85; }
+      100% { transform: translate(-320px, 330px) rotate(-380deg) scale(0.9); opacity: 0; }
+    }
+    @keyframes petal-fall-3 {
+      0% { transform: translate(0px, -20px) rotate(90deg) scale(0.6); opacity: 0; }
+      25% { opacity: 0.75; }
+      90% { opacity: 0.7; }
+      100% { transform: translate(-220px, 310px) rotate(540deg) scale(0.6); opacity: 0; }
+    }
+    @keyframes cursor-blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes torii-pulse {
+      0%, 100% { filter: drop-shadow(0 0 6px rgba(224, 80, 61, 0.35)); }
+      50% { filter: drop-shadow(0 0 14px rgba(224, 80, 61, 0.7)); }
+    }
+
+    .p1 { animation: petal-fall-1 9s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .p2 { animation: petal-fall-2 12s cubic-bezier(0.4, 0, 0.2, 1) infinite; animation-delay: 2.5s; }
+    .p3 { animation: petal-fall-3 10.5s cubic-bezier(0.4, 0, 0.2, 1) infinite; animation-delay: 5s; }
+    .p4 { animation: petal-fall-1 11s cubic-bezier(0.4, 0, 0.2, 1) infinite; animation-delay: 1.2s; }
+    .p5 { animation: petal-fall-2 8.5s cubic-bezier(0.4, 0, 0.2, 1) infinite; animation-delay: 6.8s; }
+    .p6 { animation: petal-fall-3 13s cubic-bezier(0.4, 0, 0.2, 1) infinite; animation-delay: 4.2s; }
+
+    .torii-animated { animation: torii-pulse 4.5s ease-in-out infinite; }
+    .blink { animation: cursor-blink 1s infinite; }
+
+    .font-kanji {
+      font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', 'HiraMinProN-W6', serif;
+    }
+    .font-serif {
+      font-family: 'Cinzel', 'Playfair Display', 'Times New Roman', Georgia, serif;
+    }
+    .font-mono {
+      font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+    }
+  </style>
+
+  <!-- Canvas Container with Rounded Borders -->
+  <rect x="0" y="0" width="880" height="300" rx="14" fill="url(#bg-sumi-dark)" stroke="#262230" stroke-width="1.5" />
+
+  <!-- Mount Fuji Silhouette & Snow Cap -->
+  <g opacity="0.45" transform="translate(480, 70)">
+    <!-- Base Mountain Cone -->
+    <path d="M 0,225 L 140,55 L 165,55 L 305,225 Z" fill="#1B1924" />
+    <!-- Snowcap with serrated ridge lines -->
+    <path d="M 140,55 L 165,55 L 195,95 L 178,110 L 160,98 L 145,115 L 125,92 L 110,105 Z" fill="#E8E3D8" opacity="0.32" />
+    <!-- Center mountain crest crease -->
+    <line x1="152" y1="55" x2="152" y2="225" stroke="#14131A" stroke-width="1.5" />
+  </g>
+
+  <!-- Luminous Crescent Moon -->
+  <g transform="translate(680, 50)">
+    <circle cx="20" cy="20" r="38" fill="url(#moon-glow)" />
+    <!-- Crescent Moon body -->
+    <path d="M 32,8 A 22,22 0 1,0 32,44 A 18,18 0 1,1 32,8 Z" fill="#E8E3D8" opacity="0.88" />
+  </g>
+
+  <!-- Seigaiha (Traditional Waves) at bottom edge -->
+  <g opacity="0.22" stroke="#3A3448" stroke-width="1" fill="none">
+    <path d="M 0,295 A 30,30 0 0,1 60,295 M 10,295 A 20,20 0 0,1 50,295 M 20,295 A 10,10 0 0,1 40,295" />
+    <path d="M 60,295 A 30,30 0 0,1 120,295 M 70,295 A 20,20 0 0,1 110,295 M 80,295 A 10,10 0 0,1 100,295" />
+    <path d="M 120,295 A 30,30 0 0,1 180,295 M 130,295 A 20,20 0 0,1 170,295 M 140,295 A 10,10 0 0,1 160,295" />
+    <path d="M 180,295 A 30,30 0 0,1 240,295 M 190,295 A 20,20 0 0,1 230,295 M 200,295 A 10,10 0 0,1 220,295" />
+    <path d="M 240,295 A 30,30 0 0,1 300,295 M 250,295 A 20,20 0 0,1 290,295 M 260,295 A 10,10 0 0,1 280,295" />
+    <path d="M 300,295 A 30,30 0 0,1 360,295 M 310,295 A 20,20 0 0,1 350,295 M 320,295 A 10,10 0 0,1 340,295" />
+    <path d="M 360,295 A 30,30 0 0,1 420,295 M 370,295 A 20,20 0 0,1 410,295 M 380,295 A 10,10 0 0,1 400,295" />
+    <path d="M 420,295 A 30,30 0 0,1 480,295 M 430,295 A 20,20 0 0,1 470,295 M 440,295 A 10,10 0 0,1 460,295" />
+    <path d="M 480,295 A 30,30 0 0,1 540,295 M 490,295 A 20,20 0 0,1 530,295 M 500,295 A 10,10 0 0,1 520,295" />
+    <path d="M 540,295 A 30,30 0 0,1 600,295 M 550,295 A 20,20 0 0,1 590,295 M 560,295 A 10,10 0 0,1 580,295" />
+    <path d="M 600,295 A 30,30 0 0,1 660,295 M 610,295 A 20,20 0 0,1 650,295 M 620,295 A 10,10 0 0,1 640,295" />
+    <path d="M 660,295 A 30,30 0 0,1 720,295 M 670,295 A 20,20 0 0,1 710,295 M 680,295 A 10,10 0 0,1 700,295" />
+    <path d="M 720,295 A 30,30 0 0,1 780,295 M 730,295 A 20,20 0 0,1 770,295 M 740,295 A 10,10 0 0,1 760,295" />
+    <path d="M 780,295 A 30,30 0 0,1 840,295 M 790,295 A 20,20 0 0,1 830,295 M 800,295 A 10,10 0 0,1 820,295" />
+    <path d="M 840,295 A 30,30 0 0,1 900,295 M 850,295 A 20,20 0 0,1 890,295 M 860,295 A 10,10 0 0,1 880,295" />
+  </g>
+
+  <!-- Vermilion Torii Gate (Architectural Icon) -->
+  <g class="torii-animated" transform="translate(735, 120)">
+    <!-- Top curved roof beam (Kasagi) -->
+    <path d="M -42,0 C -20,-5 20,-5 42,0 L 40,7 C 20,3 -20,3 -40,7 Z" fill="url(#torii-red)" />
+    <!-- Secondary straight beam (Nuki) -->
+    <rect x="-35" y="16" width="70" height="5" rx="1.5" fill="url(#torii-red)" />
+    <!-- Central Tablet (Gakuzuka) with Kanji '道' (The Way) -->
+    <rect x="-5" y="7" width="10" height="9" fill="#14131A" stroke="#E0503D" stroke-width="0.8" />
+    <text x="0" y="14" fill="#E8E3D8" font-size="6" text-anchor="middle" font-weight="700">道</text>
+    <!-- Left Column (Hashira) -->
+    <polygon points="-24,16 -21,110 -27,110 -24,16" fill="url(#torii-red)" />
+    <!-- Right Column (Hashira) -->
+    <polygon points="24,16 27,110 21,110 24,16" fill="url(#torii-red)" />
+    <!-- Base Pedestals (Kamebara) -->
+    <rect x="-29" y="108" width="10" height="4" rx="1" fill="#2E2B38" />
+    <rect x="19" y="108" width="10" height="4" rx="1" fill="#2E2B38" />
+    <!-- Hanging Lantern with warm glow -->
+    <g transform="translate(0, 24)">
+      <circle cx="0" cy="12" r="10" fill="#E0503D" opacity="0.25" />
+      <line x1="0" y1="-3" x2="0" y2="4" stroke="#8C867B" stroke-width="1" />
+      <rect x="-4" y="4" width="8" height="12" rx="2" fill="#E0503D" />
+      <rect x="-2.5" y="6" width="5" height="8" rx="1" fill="#FFE57F" opacity="0.9" />
+    </g>
+  </g>
+
+  <!-- Left Side: Vertical Japanese Calligraphy Column -->
+  <g transform="translate(36, 40)">
+    <!-- Traditional Vertical Text: 電脳開拓 (Cyber Pioneer) -->
+    <text x="0" y="24" class="font-kanji" font-size="18" fill="#8C867B" letter-spacing="8" opacity="0.75" writing-mode="vertical-rl">電脳開拓</text>
+    <line x1="10" y1="125" x2="10" y2="215" stroke="#2E2B38" stroke-width="1" stroke-dasharray="3 3" />
+    <text x="0" y="228" class="font-kanji" font-size="11" fill="#E0503D" opacity="0.85" writing-mode="vertical-rl">匠心</text>
+  </g>
+
+  <!-- Divider Hairline -->
+  <line x1="84" y1="36" x2="84" y2="264" stroke="#25212E" stroke-width="1" />
+
+  <!-- Main Hero Content -->
+  <g transform="translate(108, 0)">
+    <!-- Sub-badge with live indicator -->
+    <g transform="translate(0, 48)">
+      <rect x="0" y="0" width="198" height="22" rx="4" fill="#1A1822" stroke="#2D2838" stroke-width="1" />
+      <circle cx="11" cy="11" r="3.5" fill="#E0503D">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="22" y="15" class="font-mono" font-size="10.5" fill="#8C867B" letter-spacing="1.2">SYSTEM // ACTIVE_RUNNER</text>
+    </g>
+
+    <!-- Master Name in Classical Serif & Spaced Tracking -->
+    <text x="0" y="104" class="font-serif" font-size="34" font-weight="600" fill="#E8E3D8" letter-spacing="5">PRATYAKSH TOMAR</text>
+
+    <!-- Japanese Katakana Transliteration -->
+    <text x="2" y="128" class="font-kanji" font-size="12" fill="#8C867B" letter-spacing="4">プラチャクシュ・トマール  ·  NEW DELHI</text>
+
+    <!-- Monospace Role & Engineering Domain -->
+    <text x="2" y="158" class="font-mono" font-size="12.5" fill="#C5BFB5" letter-spacing="1">
+      <tspan fill="#E0503D">&gt;</tspan> AUTONOMOUS AGENT LOOPS  ·  BUN/TYPESCRIPT  ·  APPLIED ML
+    </text>
+
+    <!-- Live Terminal Command Card -->
+    <g transform="translate(0, 184)">
+      <rect x="0" y="0" width="530" height="42" rx="6" fill="#111017" stroke="#2A2536" stroke-width="1.2" />
+      <!-- Terminal Window Buttons -->
+      <circle cx="16" cy="21" r="3" fill="#E0503D" opacity="0.8" />
+      <circle cx="28" cy="21" r="3" fill="#E5A93C" opacity="0.6" />
+      <circle cx="40" cy="21" r="3" fill="#48B369" opacity="0.6" />
+      <!-- Command Text -->
+      <text x="60" y="25" class="font-mono" font-size="11.5" fill="#8C867B">
+        <tspan fill="#E8E3D8">clawnest</tspan> --runtime=<tspan fill="#E0503D">bun</tspan> --mode=<tspan fill="#E8E3D8">autonomous</tspan> --diff-gate=<tspan fill="#48B369">enforced</tspan><tspan class="blink" fill="#E0503D">_</tspan>
+      </text>
+    </g>
+
+    <!-- Telemetry Status Line -->
+    <text x="2" y="254" class="font-mono" font-size="10.5" fill="#6B655D" letter-spacing="1">
+      STATUS: COLD CHAI  ·  SILENT HOUSE  ·  400+ ALGORITHMIC PROOFS  ·  730+ COMMITS
+    </text>
+  </g>
+
+  <!-- Master Hanko Seal Stamp (Upper Right Signature) -->
+  <g transform="translate(798, 36)" filter="url(#hanko-rough-hero)">
+    <rect x="0" y="0" width="50" height="50" rx="9" fill="none" stroke="#E0503D" stroke-width="2.8" opacity="0.95" />
+    <rect x="4" y="4" width="42" height="42" rx="6" fill="none" stroke="#E0503D" stroke-width="0.8" opacity="0.45" />
+    <text x="25" y="35" text-anchor="middle" font-size="26" class="font-kanji" font-weight="700" fill="#E0503D">拓</text>
+  </g>
+
+  <!-- Mesmerizing Animated Sakura Petals Drifting in the Wind -->
+  <g fill="#E0503D" opacity="0.8">
+    <use href="#sakura-petal" x="850" y="30" class="p1" fill="#F07167" />
+    <use href="#sakura-petal" x="800" y="10" class="p2" fill="#E0503D" />
+    <use href="#sakura-petal" x="720" y="40" class="p3" fill="#FF8FA3" />
+    <use href="#sakura-petal" x="650" y="15" class="p4" fill="#F07167" />
+    <use href="#sakura-petal" x="780" y="60" class="p5" fill="#E0503D" />
+    <use href="#sakura-petal" x="590" y="20" class="p6" fill="#FFAAA6" />
+  </g>
+</svg>

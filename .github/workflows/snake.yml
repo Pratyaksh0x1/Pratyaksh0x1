@@ -1,0 +1,33 @@
+name: Generate Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Generate Snake SVG
+        uses: platane/snk/svg-only@v3
+        with:
+          github_user_name: Pratyaksh0x1
+          outputs: |
+            assets/github-contribution-grid-snake.svg?palette=github-light&color_snake=#C8382B&color_dots=#f4f0e8,#e2d9cc,#c79f97,#b85a50,#c8382b
+            assets/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#E0503D&color_dots=#141312,#252126,#482531,#8f3337,#e0503d
+
+      - name: Commit & Push generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg || true
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update live contribution snake [skip ci]" && git push)
