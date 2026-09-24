@@ -7,6 +7,12 @@
 </p>
 
 <p align="center">
+  <a href="https://pratyaksh0x1.github.io/Pratyaksh0x1/" target="_blank" title="Listen to Nandemonaiya by RADWIMPS // Midnight Transmission">
+    <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8F_PLAY_MUSIC-Nandemonaiya_%2F%2F_RADWIMPS-E0503D?style=for-the-badge&logo=youtube-music&logoColor=white" alt="Play Music // Nandemonaiya">
+  </a>
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/divider-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg">
