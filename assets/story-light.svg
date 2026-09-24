@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 180" width="100%" height="180" fill="none">
+  <style>
+    .commit-hash-light {
+      font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+      font-size: 11px;
+      letter-spacing: 1px;
+      fill: #8A857C;
+    }
+    .commit-msg-light {
+      font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      fill: #1C1B19;
+    }
+    .commit-warn-light {
+      font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      fill: #C8382B;
+    }
+    .commit-tag-light {
+      font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+      font-size: 10px;
+      letter-spacing: 1px;
+      fill: #A8A297;
+    }
+  </style>
+
+  <!-- Left vertical timeline branch line -->
+  <line x1="38" y1="24" x2="38" y2="156" stroke="#D9D3C7" stroke-width="1.5" stroke-dasharray="3 3" />
+
+  <!-- Commit 1 -->
+  <g transform="translate(0, 30)">
+    <circle cx="38" cy="0" r="3.5" fill="#D9D3C7" stroke="#8A857C" stroke-width="1.5" />
+    <text x="64" y="4" class="commit-hash-light">1a04d2e</text>
+    <text x="140" y="4" class="commit-msg-light">feat(core): autonomous agent loop on Bun runtime</text>
+    <text x="730" y="4" class="commit-tag-light">[origin/main]</text>
+  </g>
+
+  <!-- Commit 2 -->
+  <g transform="translate(0, 70)">
+    <circle cx="38" cy="0" r="3.5" fill="#D9D3C7" stroke="#8A857C" stroke-width="1.5" />
+    <text x="64" y="4" class="commit-hash-light">4b89f10</text>
+    <text x="140" y="4" class="commit-msg-light">feat(tools): recursive tool executor with unrestricted shell</text>
+    <text x="730" y="4" class="commit-tag-light">+182 -14</text>
+  </g>
+
+  <!-- Commit 3 (The War Story incident) -->
+  <g transform="translate(0, 110)">
+    <circle cx="38" cy="0" r="4" fill="#C8382B" opacity="0.9" />
+    <text x="64" y="4" class="commit-hash-light" fill="#C8382B">6e21c38</text>
+    <text x="140" y="4" class="commit-warn-light">oops: agent hallucinated and attempted to edit its own prompt</text>
+    <text x="730" y="4" class="commit-tag-light" fill="#C8382B">REVOKED</text>
+  </g>
+
+  <!-- Commit 4 (The Architectural Fix) -->
+  <g transform="translate(0, 150)">
+    <circle cx="38" cy="0" r="3.5" fill="#1C1B19" stroke="#C8382B" stroke-width="1.5" />
+    <text x="64" y="4" class="commit-hash-light">8d44e72</text>
+    <text x="140" y="4" class="commit-msg-light">refactor: mandatory git-diff preview approval gate before disk writes</text>
+    <text x="730" y="4" class="commit-tag-light">[v0.4.0-stable]</text>
+  </g>
+</svg>

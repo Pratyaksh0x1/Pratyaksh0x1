@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 150" width="100%" height="150" fill="none">
+  <defs>
+    <!-- Organic filter to simulate hand-carved seal edge on washi paper -->
+    <filter id="hanko-roughness-dark" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <style>
+    .name-dark {
+      font-family: 'Cinzel', 'Playfair Display', 'Times New Roman', 'Hiragino Mincho ProN', Georgia, serif;
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: 6px;
+      fill: #E8E3D8;
+    }
+    .katakana-dark {
+      font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif;
+      font-size: 11px;
+      letter-spacing: 5px;
+      fill: #8C867B;
+    }
+    .sub-dark {
+      font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+      font-size: 12px;
+      letter-spacing: 2px;
+      fill: #8C867B;
+    }
+    .status-dark {
+      font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+      font-size: 11px;
+      letter-spacing: 1px;
+      fill: #66625C;
+    }
+    .stamp-text {
+      font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', 'HiraMinProN-W6', serif;
+      font-weight: 700;
+      fill: #E0503D;
+    }
+  </style>
+
+  <!-- Left vertical Katakana accent -->
+  <text x="36" y="38" class="katakana-dark">プラチャクシュ・トマール</text>
+
+  <!-- Vertical hairline divider between Katakana and English name -->
+  <line x1="230" y1="24" x2="230" y2="126" stroke="#2A2826" stroke-width="1" />
+
+  <!-- Main identity block -->
+  <g transform="translate(254, 0)">
+    <!-- Name -->
+    <text x="0" y="52" class="name-dark">PRATYAKSH TOMAR</text>
+
+    <!-- Subtitle / Focus area -->
+    <text x="2" y="82" class="sub-dark">AUTONOMOUS AGENTS  ·  SYSTEM RUNTIMES  ·  APPLIED ML</text>
+
+    <!-- Quiet telemetry line -->
+    <g transform="translate(2, 114)">
+      <!-- Vermilion micro-pulse dot -->
+      <circle cx="4" cy="-4" r="3" fill="#E0503D" opacity="0.85">
+        <animate attributeName="opacity" values="0.85;0.2;0.85" dur="3.6s" repeatCount="indefinite" />
+      </circle>
+      <text x="18" y="0" class="status-dark">midnight buffer  ·  chai going cold  ·  ak-tu / new delhi</text>
+    </g>
+  </g>
+
+  <!-- Hand-carved Vermilion Hanko Stamp (1% accent) -->
+  <g transform="translate(800, 38)" filter="url(#hanko-roughness-dark)">
+    <!-- Outer stamp boundary: hand-pressed square with rounded corners -->
+    <rect x="0" y="0" width="48" height="48" rx="8" fill="none" stroke="#E0503D" stroke-width="2.5" opacity="0.9" />
+    <rect x="3.5" y="3.5" width="41" height="41" rx="5" fill="none" stroke="#E0503D" stroke-width="0.8" opacity="0.5" />
+    <!-- Traditional seal character: 拓 (Taku / Hiraku: To pioneer, craft, break new ground) -->
+    <text x="24" y="33" text-anchor="middle" font-size="24" class="stamp-text">拓</text>
+  </g>
+</svg>
