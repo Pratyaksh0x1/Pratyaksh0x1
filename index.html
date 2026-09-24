@@ -299,6 +299,91 @@
       color: var(--dim);
       letter-spacing: 0.5px;
     }
+
+    /* Cool Anime Stickers */
+    .sticker {
+      position: absolute;
+      z-index: 10;
+      transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .sticker img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 20px rgba(224, 80, 61, 0.3));
+      transition: transform 0.35s ease, filter 0.35s ease;
+    }
+
+    .sticker:hover img {
+      transform: scale(1.12) rotate(0deg);
+      filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 35px rgba(224, 80, 61, 0.75));
+    }
+
+    .sticker-samurai {
+      left: -155px;
+      bottom: 25px;
+      width: 175px;
+      animation: float-samurai 6s ease-in-out infinite;
+    }
+
+    .sticker-lofi {
+      right: -155px;
+      top: 35px;
+      width: 175px;
+      animation: float-lofi 7s ease-in-out infinite;
+    }
+
+    .sticker-badge {
+      display: block;
+      margin: 8px auto 0 auto;
+      width: fit-content;
+      background: rgba(14, 13, 19, 0.92);
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 3px 10px;
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #E8E3D8;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      text-transform: uppercase;
+    }
+
+    @keyframes float-samurai {
+      0%, 100% { transform: translateY(0px) rotate(-6deg); }
+      50% { transform: translateY(-14px) rotate(-2deg); }
+    }
+
+    @keyframes float-lofi {
+      0%, 100% { transform: translateY(0px) rotate(6deg); }
+      50% { transform: translateY(-16px) rotate(9deg); }
+    }
+
+    @media (max-width: 980px) {
+      .sticker-samurai {
+        position: static;
+        width: 130px;
+        margin: 15px 8px 0 8px;
+        display: inline-block;
+        animation: none;
+      }
+      .sticker-lofi {
+        position: static;
+        width: 130px;
+        margin: 15px 8px 0 8px;
+        display: inline-block;
+        animation: none;
+      }
+      .stickers-mobile-dock {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 18px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -306,6 +391,18 @@
   <canvas id="sakura-canvas"></canvas>
 
   <div class="container">
+    <!-- Left Cyber Samurai Anime Sticker -->
+    <div class="sticker sticker-samurai" title="Cyber Samurai // 武士 (Click to interact)">
+      <img src="assets/sticker-cyber-samurai.png" alt="Cyber Samurai Anime Sticker">
+      <span class="sticker-badge">【武士 // SAMURAI】</span>
+    </div>
+
+    <!-- Right Lo-Fi Chill Anime Girl Sticker -->
+    <div class="sticker sticker-lofi" title="Cyber Lo-Fi Listener // チル (Click to interact)">
+      <img src="assets/sticker-lofi-girl.png" alt="Lo-Fi Anime Chill Sticker">
+      <span class="sticker-badge">【チル // LO-FI CHILL】</span>
+    </div>
+
     <div class="top-badge">
       <span class="dot"></span>
       <span>MIDNIGHT TRANSMISSION // 真夜中の電脳空間</span>
