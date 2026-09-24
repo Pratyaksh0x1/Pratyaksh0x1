@@ -32,11 +32,10 @@
 
   <rect x="0" y="0" width="880" height="74" rx="10" fill="url(#radio-bg-dark)" stroke="#262232" stroke-width="1.2" />
 
-  <!-- Left Cassette Icon / Tape Reels -->
+  <!-- Cassette Icon / Tape Reels -->
   <g transform="translate(24, 18)">
     <rect x="0" y="0" width="56" height="38" rx="5" fill="#15131C" stroke="#2D2838" stroke-width="1.2" />
     <rect x="12" y="8" width="32" height="22" rx="3" fill="#0C0B10" />
-    <!-- Reel 1 -->
     <g transform="translate(20, 19)">
       <circle cx="0" cy="0" r="6" fill="#2D2838" />
       <g class="tape-reel">
@@ -45,7 +44,6 @@
         <line x1="0" y1="-5" x2="0" y2="5" stroke="#E8E3D8" stroke-width="0.8" />
       </g>
     </g>
-    <!-- Reel 2 -->
     <g transform="translate(36, 19)">
       <circle cx="0" cy="0" r="6" fill="#2D2838" />
       <g class="tape-reel">
@@ -56,17 +54,17 @@
     </g>
   </g>
 
-  <!-- Track Meta -->
+  <!-- Track Meta featuring Nandemonaiya -->
   <g transform="translate(98, 26)">
-    <text x="0" y="0" class="font-kanji" font-size="11" fill="#8C867B" letter-spacing="2">
-      真夜中の電脳空間 // TRANSMISSION 03:14 AM
+    <text x="0" y="0" class="font-mono" font-size="10.5" fill="#8C867B" letter-spacing="1">
+      MIDNIGHT TRANSMISSION <tspan class="font-kanji" fill="#66615A">// 真夜中の電脳空間 (Midnight Cyber Space) · 03:14 AM</tspan>
     </text>
-    <text x="0" y="24" class="font-mono" font-size="13" font-weight="600" fill="#E8E3D8">
-      COLD CUTTING CHAI &amp; AMBIENT SYNTH <tspan fill="#E0503D">·</tspan> <tspan font-weight="400" font-size="11.5" fill="#8C867B">ZERO NOTIFICATIONS ON REPEAT</tspan>
+    <text x="0" y="24" class="font-mono" font-size="12.5" font-weight="600" fill="#E8E3D8">
+      なんでもないや (Nandemonaiya) <tspan font-weight="400" fill="#E0503D">·</tspan> <tspan font-size="11.5" font-weight="400" fill="#8C867B">Mone Kamishiraishi (Mitsuha) · Cold Chai on Loop</tspan>
     </text>
   </g>
 
-  <!-- Animated Sound Equalizer Bars (Far Right) -->
+  <!-- Animated Sound Equalizer Bars -->
   <g transform="translate(800, 52)">
     <rect x="0" y="-30" width="3" height="15" rx="1.5" fill="#E0503D" class="b1" />
     <rect x="6" y="-30" width="3" height="25" rx="1.5" fill="#E0503D" class="b2" />

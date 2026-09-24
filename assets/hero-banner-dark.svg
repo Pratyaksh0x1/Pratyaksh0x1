@@ -143,12 +143,14 @@
     </g>
   </g>
 
-  <!-- Left Side: Vertical Japanese Calligraphy Column -->
-  <g transform="translate(36, 40)">
+  <!-- Left Side: Vertical Japanese Calligraphy Column with English Translation -->
+  <g transform="translate(24, 40)">
     <!-- Traditional Vertical Text: 電脳開拓 (Cyber Pioneer) -->
-    <text x="0" y="24" class="font-kanji" font-size="18" fill="#8C867B" letter-spacing="8" opacity="0.75" writing-mode="vertical-rl">電脳開拓</text>
-    <line x1="10" y1="125" x2="10" y2="215" stroke="#2E2B38" stroke-width="1" stroke-dasharray="3 3" />
-    <text x="0" y="228" class="font-kanji" font-size="11" fill="#E0503D" opacity="0.85" writing-mode="vertical-rl">匠心</text>
+    <text x="0" y="24" class="font-kanji" font-size="16" fill="#8C867B" letter-spacing="6" opacity="0.8" writing-mode="vertical-rl">電脳開拓</text>
+    <text x="24" y="24" class="font-mono" font-size="7.5" fill="#6B655D" letter-spacing="2" writing-mode="vertical-rl">CYBER PIONEER</text>
+    <line x1="10" y1="135" x2="10" y2="200" stroke="#2E2B38" stroke-width="1" stroke-dasharray="3 3" />
+    <text x="0" y="212" class="font-kanji" font-size="11" fill="#E0503D" opacity="0.9" writing-mode="vertical-rl">匠心</text>
+    <text x="20" y="212" class="font-mono" font-size="7" fill="#E0503D" opacity="0.8" writing-mode="vertical-rl">CRAFT</text>
   </g>
 
   <!-- Divider Hairline -->
@@ -168,8 +170,8 @@
     <!-- Master Name in Classical Serif & Spaced Tracking -->
     <text x="0" y="104" class="font-serif" font-size="34" font-weight="600" fill="#E8E3D8" letter-spacing="5">PRATYAKSH TOMAR</text>
 
-    <!-- Japanese Katakana Transliteration -->
-    <text x="2" y="128" class="font-kanji" font-size="12" fill="#8C867B" letter-spacing="4">プラチャクシュ・トマール  ·  NEW DELHI</text>
+    <!-- Japanese Katakana Transliteration with English -->
+    <text x="2" y="128" class="font-mono" font-size="11" fill="#8C867B" letter-spacing="1">NEW DELHI  ·  <tspan class="font-kanji">プラチャクシュ・トマール</tspan> (PRATYAKSH TOMAR)</text>
 
     <!-- Monospace Role & Engineering Domain -->
     <text x="2" y="158" class="font-mono" font-size="12.5" fill="#C5BFB5" letter-spacing="1">
@@ -201,6 +203,7 @@
     <rect x="4" y="4" width="42" height="42" rx="6" fill="none" stroke="#E0503D" stroke-width="0.8" opacity="0.45" />
     <text x="25" y="35" text-anchor="middle" font-size="26" class="font-kanji" font-weight="700" fill="#E0503D">拓</text>
   </g>
+  <text x="823" y="96" text-anchor="middle" class="font-mono" font-size="8" fill="#8C867B" letter-spacing="1">TAKU (PIONEER)</text>
 
   <!-- Mesmerizing Animated Sakura Petals Drifting in the Wind -->
   <g fill="#E0503D" opacity="0.8">

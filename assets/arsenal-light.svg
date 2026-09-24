@@ -16,7 +16,7 @@
     <rect x="0" y="0" width="208" height="140" rx="10" fill="url(#arsenal-bg-light)" stroke="#DDD6C8" stroke-width="1.2" />
     <circle cx="20" cy="24" r="3" fill="#C8382B" />
     <text x="32" y="27" class="font-mono" font-size="10" fill="#756F67" letter-spacing="1">AGENT RUNTIME</text>
-    <text x="18" y="56" class="font-kanji" font-size="16" font-weight="700" fill="#1C1B19">自律循環</text>
+    <text x="18" y="56" class="font-kanji" font-size="15" font-weight="700" fill="#1C1B19">自律循環 <tspan class="font-mono" font-size="10.5" font-weight="400" fill="#756F67">// Loops</tspan></text>
     <text x="18" y="76" class="font-mono" font-size="11" fill="#C8382B">Bun · TypeScript · LLM</text>
     <line x1="18" y1="92" x2="190" y2="92" stroke="#E2DDD2" stroke-width="1" />
     <text x="18" y="114" class="font-mono" font-size="9.5" fill="#8C867C">RECURSIVE TOOL EXEC</text>
@@ -28,7 +28,7 @@
     <rect x="0" y="0" width="208" height="140" rx="10" fill="url(#arsenal-bg-light)" stroke="#DDD6C8" stroke-width="1.2" />
     <circle cx="20" cy="24" r="3" fill="#C8382B" />
     <text x="32" y="27" class="font-mono" font-size="10" fill="#756F67" letter-spacing="1">INTELLIGENCE</text>
-    <text x="18" y="56" class="font-kanji" font-size="16" font-weight="700" fill="#1C1B19">機械学習</text>
+    <text x="18" y="56" class="font-kanji" font-size="15" font-weight="700" fill="#1C1B19">機械学習 <tspan class="font-mono" font-size="10.5" font-weight="400" fill="#756F67">// ML</tspan></text>
     <text x="18" y="76" class="font-mono" font-size="11" fill="#C8382B">scikit-learn · Pandas</text>
     <line x1="18" y1="92" x2="190" y2="92" stroke="#E2DDD2" stroke-width="1" />
     <text x="18" y="114" class="font-mono" font-size="9.5" fill="#8C867C">RANDOM FOREST (R² 0.83)</text>
@@ -40,7 +40,7 @@
     <rect x="0" y="0" width="208" height="140" rx="10" fill="url(#arsenal-bg-light)" stroke="#DDD6C8" stroke-width="1.2" />
     <circle cx="20" cy="24" r="3" fill="#C8382B" />
     <text x="32" y="27" class="font-mono" font-size="10" fill="#756F67" letter-spacing="1">FOUNDATIONS</text>
-    <text x="18" y="56" class="font-kanji" font-size="16" font-weight="700" fill="#1C1B19">低層設計</text>
+    <text x="18" y="56" class="font-kanji" font-size="15" font-weight="700" fill="#1C1B19">低層設計 <tspan class="font-mono" font-size="10.5" font-weight="400" fill="#756F67">// Systems</tspan></text>
     <text x="18" y="76" class="font-mono" font-size="11" fill="#C8382B">C · C++ · Algorithms</text>
     <line x1="18" y1="92" x2="190" y2="92" stroke="#E2DDD2" stroke-width="1" />
     <text x="18" y="114" class="font-mono" font-size="9.5" fill="#8C867C">400+ LEETCODE / CODE360</text>
@@ -52,7 +52,7 @@
     <rect x="0" y="0" width="208" height="140" rx="10" fill="url(#arsenal-bg-light)" stroke="#DDD6C8" stroke-width="1.2" />
     <circle cx="20" cy="24" r="3" fill="#C8382B" />
     <text x="32" y="27" class="font-mono" font-size="10" fill="#756F67" letter-spacing="1">BACKEND CORE</text>
-    <text x="18" y="56" class="font-kanji" font-size="16" font-weight="700" fill="#1C1B19">通信基盤</text>
+    <text x="18" y="56" class="font-kanji" font-size="15" font-weight="700" fill="#1C1B19">通信基盤 <tspan class="font-mono" font-size="10.5" font-weight="400" fill="#756F67">// Cloud</tspan></text>
     <text x="18" y="76" class="font-mono" font-size="11" fill="#C8382B">FastAPI · Flask · Mongo</text>
     <line x1="18" y1="92" x2="190" y2="92" stroke="#E2DDD2" stroke-width="1" />
     <text x="18" y="114" class="font-mono" font-size="9.5" fill="#8C867C">REST &amp; STREAMING APIS</text>
