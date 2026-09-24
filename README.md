@@ -7,11 +7,21 @@
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/radio-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/radio-light.svg">
-    <img alt="Midnight Audio Transmission" src="./assets/radio-dark.svg" width="100%">
-  </picture>
+  <a href="https://pratyaksh0x1.github.io/Pratyaksh0x1/" target="_blank" title="Click to open the Midnight Ambient Cyber Player in background">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/radio-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/radio-light.svg">
+      <img alt="Midnight Audio Transmission" src="./assets/radio-dark.svg" width="100%">
+    </picture>
+  </a>
+  <br>
+  <a href="https://pratyaksh0x1.github.io/Pratyaksh0x1/" target="_blank">
+    <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8F_PLAY_AMBIENT_AUDIO-Nandemonaiya_(Low_Volume)-E0503D?style=for-the-badge&logo=applemusic&logoColor=white" alt="Play Ambient Audio in Low Volume">
+  </a>
+  &nbsp;
+  <a href="https://pratyaksh0x1.github.io/Pratyaksh0x1/" target="_blank">
+    <img src="https://img.shields.io/badge/%E2%8F%B8%EF%B8%8F_PAUSE_%2F_CONTROLS-Player_Dashboard-161420?style=for-the-badge&logo=soundcharts&logoColor=E0503D" alt="Pause / Controls">
+  </a>
 </p>
 
 <p align="center">
@@ -73,6 +83,14 @@
     <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg">
     <img alt="Automated GitHub Action Contribution Snake" src="./assets/github-contribution-grid-snake-dark.svg" width="100%">
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Pratyaksh0x1&theme=dark&background=0E0D13&border=262232&stroke=E0503D&ring=E0503D&fire=E0503D&currStreakNum=E8E3D8&sideNums=E8E3D8&sideLabels=8C867B&currStreakLabel=E0503D&dates=66615A">
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=Pratyaksh0x1&theme=light&background=F9F6F0&border=DDD6C8&stroke=C8382B&ring=C8382B&fire=C8382B&currStreakNum=1C1B19&sideNums=1C1B19&sideLabels=756F67&currStreakLabel=C8382B&dates=8C867C">
+    <img alt="Pratyaksh0x1 Live GitHub Contribution Streak &amp; Dynamic Metrics" src="https://streak-stats.demolab.com/?user=Pratyaksh0x1&theme=dark&background=0E0D13&border=262232&stroke=E0503D&ring=E0503D&fire=E0503D&currStreakNum=E8E3D8&sideNums=E8E3D8&sideLabels=8C867B&currStreakLabel=E0503D&dates=66615A">
   </picture>
 </p>
 

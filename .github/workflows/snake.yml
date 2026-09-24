@@ -1,8 +1,8 @@
-name: Generate Contribution Snake
+name: Sync Live Contributions & Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -17,6 +17,17 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Sync Live Contributions to Japanese Chronicle
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/sync_contributions.py
+
       - name: Generate Snake SVG
         uses: platane/snk/svg-only@v3
         with:
@@ -29,5 +40,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg || true
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update live contribution snake [skip ci]" && git push)
+          git add assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg assets/animated-contributions-dark.svg assets/animated-contributions-light.svg || true
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: sync live contribution metrics & snake [skip ci]" && git push)
