@@ -22,8 +22,6 @@
   </picture>
 </p>
 
-
-
 ### ⚡ Live Contribution Activity (活動記録 // Contributions)
 
 <p align="center">
@@ -62,20 +60,11 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/arsenal-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/arsenal-light.svg">
-    <img alt="Technical Arsenal" src="./assets/arsenal-dark.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/skills-matrix-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/skills-matrix-light.svg">
+    <img alt="Technical Arsenal &amp; Japanese Mon Skills Matrix" src="./assets/skills-matrix-dark.svg" width="100%">
   </picture>
 </p>
-
-```
-languages      C, C++, Python, TypeScript, JavaScript
-runtimes       Bun, Node.js
-backends       FastAPI, Flask, REST APIs
-intelligence   LangChain, RAG / Ollama, scikit-learn, Pandas, Chart.js
-storage        MongoDB, MySQL
-foundations    Data Structures, Operating Systems, Computer Networks
-```
 
 <p align="center">
   <picture>
@@ -85,62 +74,55 @@ foundations    Data Structures, Operating Systems, Computer Networks
   </picture>
 </p>
 
-### 📜 Selected Work &amp; Systems (厳選開発 // Projects)
-
-**[ClawNest](https://github.com/Pratyaksh0x1/ClawNest)** `TypeScript` · `Bun` · `OpenRouter API` · `Telegram Bot`
-- *The Problem:* Most AI agent demos are fragile prompt wrappers that choke as soon as they run actual filesystem or shell commands.
-- *The Twist:* Built an autonomous loop on Bun with modular tool executors and remote Telegram dispatch. During testing, an early prompt regression caused the agent to attempt editing its own execution loop.
-- *The Result:* Engineered a mandatory git-diff preview approval gate. Every single write is diffed and held for review before disk commit. Added goal decomposition, token failovers, and citation-backed codebase Q&A.
+### ⛩️ Transmission & Contacts (通信確立 // Connect)
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/story-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/story-light.svg">
-    <img alt="ClawNest Commit Chronicle" src="./assets/story-light.svg" width="100%">
-  </picture>
+  <a href="https://pratyaksh-ai-ten.vercel.app" target="_blank" title="Explore Live Portfolio">
+    <img src="https://img.shields.io/badge/PORTFOLIO-作品集_Live_Showcase-E0503D?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio">
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/pratyaksh-tomar-112bb6337/" target="_blank" title="Connect on LinkedIn">
+    <img src="https://img.shields.io/badge/LINKEDIN-職歴_Professional-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  &nbsp;
+  <a href="https://leetcode.com/u/PratyakshTomar/" target="_blank" title="View LeetCode Profile">
+    <img src="https://img.shields.io/badge/LEETCODE-算法_400+_Solved-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode">
+  </a>
+  &nbsp;
+  <a href="https://github.com/Pratyaksh0x1/ClawNest" target="_blank" title="View Top Repository ClawNest">
+    <img src="https://img.shields.io/badge/TOP_REPO-旗艦_ClawNest_(Bun_Agent)-181717?style=for-the-badge&logo=github&logoColor=white" alt="Top Repository ClawNest">
+  </a>
 </p>
 
-**[WorkMesh](https://github.com/Pratyaksh0x1/WorkMesh)** `TypeScript` · `Node.js` · `Architecture` · `272 Commits`
-- *The Problem:* Coordinating complex developer workflows and task execution pipelines without race conditions or memory leaks across concurrent nodes.
-- *The Twist:* Architected an extensible modular orchestration engine with 272 iterative commits, refining performance under heavy concurrent workloads.
-- *The Result:* High-throughput task pipeline with bulletproof failure recovery, typed event channels, and sub-millisecond execution dispatch.
-
-**[California Housing Predictor](https://github.com/Pratyaksh0x1/Project-California)** `Python` · `Flask` · `scikit-learn` · `Chart.js` · `Pandas`
-- *The Problem:* Real estate regression models degrade rapidly if skewed income categories and regional proximity outliers aren't handled before fitting.
-- *The Twist:* Built a preprocessing pipeline across 20,640 records using median imputation and stratified sampling on income strata, tuning a Random Forest Regressor to capture spatial non-linearities.
-- *The Result:* Achieved an $R^2$ of 0.83 with MAE under $30.9K. Deployed a Flask REST API with batch CSV drag-and-drop inference and an interactive Chart.js evaluation dashboard for residual diagnostics.
-
-**[Hackathon Sprints &amp; Policy AI](https://github.com/Pratyaksh0x1)** `Python` · `FastAPI` · `LangChain` · `RAG`
-- *The Problem:* Hackathon AI prototypes often collapse under live evaluation latency or hallucinated references.
-- *The Twist:* Engineered fast, low-overhead retrieval pipelines under strict 24-hour clocks as part of Team Thunders at the National AI/ML Hackathon by AVEVA (IIT Hyderabad) and reached the finals in Policy Conclave '26 at IIT Kanpur.
-- *The Result:* Resilient architectures designed to cite exact ground truth documents instead of guessing.
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/divider-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg">
-    <img alt="divider" src="./assets/divider-dark.svg" width="100%">
-  </picture>
-</p>
-
-### 🌙 Beyond Code &amp; Night Sprints (深夜録 // After Hours)
-
-- **The ritual:** Zero notifications, ambient synth or lo-fi on repeat, cold chai on the desk.
-- **The ledger:** Solved 400+ problems across LeetCode and Code360.
-- **The rule:** Never allow an agent to write to disk without showing you a diff first.
+<table align="center" border="0" style="border: none; background: transparent; width: 100%;">
+  <tr>
+    <td align="left" width="50%" style="padding: 12px; border: 1px solid #262232; border-radius: 8px;">
+      <b>🌐 PORTFOLIO (作品集)</b><br>
+      <a href="https://pratyaksh-ai-ten.vercel.app"><b>pratyaksh-ai-ten.vercel.app</b></a><br>
+      <sub>Interactive AI Demos, Systems Showcase &amp; Neural Visualizations</sub>
+    </td>
+    <td align="left" width="50%" style="padding: 12px; border: 1px solid #262232; border-radius: 8px;">
+      <b>💼 LINKEDIN (職歴)</b><br>
+      <a href="https://www.linkedin.com/in/pratyaksh-tomar-112bb6337/"><b>in/pratyaksh-tomar-112bb6337</b></a><br>
+      <sub>Professional Network, Engineering Experience &amp; Collaboration</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" width="50%" style="padding: 12px; border: 1px solid #262232; border-radius: 8px;">
+      <b>⚔️ LEETCODE (算法演習)</b><br>
+      <a href="https://leetcode.com/u/PratyakshTomar/"><b>leetcode.com/u/PratyakshTomar</b></a><br>
+      <sub>400+ Problems Solved across LeetCode &amp; Code360 · DSA Core</sub>
+    </td>
+    <td align="left" width="50%" style="padding: 12px; border: 1px solid #262232; border-radius: 8px;">
+      <b>⭐ TOP REPOSITORY (旗艦開発)</b><br>
+      <a href="https://github.com/Pratyaksh0x1/ClawNest"><b>Pratyaksh0x1/ClawNest</b></a><br>
+      <sub>Autonomous AI Agent System on Bun with Diff Approval &amp; Tool Exec</sub>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/divider-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg">
-    <img alt="divider" src="./assets/divider-light.svg" width="100%">
-  </picture>
-</p>
-
-<p align="center">
-  <sub>If you are engineering autonomous systems that need to behave, tuning fast runtimes, or debugging past midnight:</sub>
-  <br>
-  <sub><b>Email:</b> `Pratyakshtomar2000@gmail.com` · <a href="https://linkedin.com"><b>LinkedIn</b></a> · <a href="https://github.com/Pratyaksh0x1"><b>GitHub</b></a></sub>
+  <sub>Direct Transmission: <a href="mailto:pratyakshtomar2000@gmail.com"><b>pratyakshtomar2000@gmail.com</b></a></sub>
   <br><br>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/hanko-stamp-dark.svg">

@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="430" fill="none">
+  <defs>
+    <filter id="tile-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, monospace; }
+    .font-jp { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', 'Source Han Serif', serif; }
+    .skill-tile { transition: all 0.25s ease; }
+  </style>
+
+  <!-- Background Base Container -->
+  <rect x="0" y="0" width="880" height="430" rx="14" fill="#121018" stroke="#2B2638" stroke-width="1.2" />
+
+  <!-- Top Decorative Header with Japanese Mon pattern -->
+  <g transform="translate(24, 20)">
+    <circle cx="8" cy="8" r="4" fill="#E0503D" />
+    <text x="20" y="12" class="font-jp" font-size="14" font-weight="700" fill="#E8E3D8" letter-spacing="1.5">技術兵器廠 <tspan class="font-mono" font-size="11" font-weight="400" fill="#E0503D">// SKILLS &amp; ARSENAL</tspan></text>
+    <text x="832" y="12" class="font-mono" font-size="10" fill="#8C867B" text-anchor="end">AUTHENTIC JAPANESE MON STAMP MATRIX · 17 MODULES</text>
+    <line x1="0" y1="24" x2="832" y2="24" stroke="#2B2638" stroke-width="1" />
+  </g>
+
+  <!-- Category: 言語 // PROGRAMMING LANGUAGES -->
+  <g transform="translate(24, 62)">
+    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">言語 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// PROGRAMMING LANGUAGES</tspan></text>
+  </g>
+
+  <g transform="translate(24.0, 80)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="158.0" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">核</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <circle cx="12" cy="12" r="11" fill="#A8B9CC" /><path d="M16 8.5C14.8 7.3 12.8 7 11 7.8C8.8 8.8 7.5 11 7.5 13.5C7.5 16.5 9.5 18.5 12.5 18.5C14.5 18.5 16 17.5 17 16" stroke="#004482" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">C</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Core Systems</text>
+  </g>
+
+  <g transform="translate(192.5, 80)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="158.0" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">刃</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <polygon points="12,1 22,6.5 22,17.5 12,23 2,17.5 2,6.5" fill="#00599C" /><path d="M9.5 8C8.5 7.2 7 7.2 5.8 7.8C4.5 8.5 3.8 9.8 3.8 11.8C3.8 14.2 5 15.5 7.2 15.5C8.4 15.5 9.5 14.8 10 14" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" /><path d="M12.5 11.8H15.5M14 10.3V13.3M17.5 11.8H20.5M19 10.3V13.3" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">C++</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Blade Speed</text>
+  </g>
+
+  <g transform="translate(361.0, 80)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="158.0" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">蛇</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <path d="M11.8 2.2C6.8 2.2 7.1 4.4 7.1 4.4L7.1 6.6H12V7.4H4.5C4.5 7.4 2 7.1 2 12C2 16.8 4.2 16.6 4.2 16.6H5.7L5.7 14.3C5.7 11.6 8.1 11.6 8.1 11.6H13C13 11.6 15.2 11.7 15.2 9.5C15.2 7.3 15.2 4.4 15.2 4.4C15.2 4.4 15.5 2.2 11.8 2.2ZM9.4 3.7C9.9 3.7 10.3 4.1 10.3 4.6C10.3 5.1 9.9 5.5 9.4 5.5C8.9 5.5 8.5 5.1 8.5 4.6C8.5 4.1 8.9 3.7 9.4 3.7Z" fill="#387EB8"/><path d="M12.2 21.8C17.2 21.8 16.9 19.6 16.9 19.6L16.9 17.4H12V16.6H19.5C19.5 16.6 22 16.9 22 12C22 7.2 19.8 7.4 19.8 7.4H18.3L18.3 9.7C18.3 12.4 15.9 12.4 15.9 12.4H11C11 11.6 8.8 12.3 8.8 14.5C8.8 16.7 8.8 19.6 8.8 19.6C8.8 19.6 8.5 21.8 12.2 21.8ZM14.6 20.3C14.1 20.3 13.7 19.9 13.7 19.4C13.7 18.9 14.1 18.5 14.6 18.5C15.1 18.5 15.5 18.9 15.5 19.4C15.5 19.9 15.1 20.3 14.6 20.3Z" fill="#FFE052"/>
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Python</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Data & ML</text>
+  </g>
+
+  <g transform="translate(529.5, 80)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="158.0" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">型</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <rect x="2" y="2" width="20" height="20" rx="4" fill="#3178C6" /><path d="M5.5 8.5H12M8.7 8.5V17M13.5 15.2C14 16.2 15.2 17 16.8 17C18.5 17 19.5 16 19.5 14.7C19.5 13.3 18.4 12.7 16.7 12.1C14.8 11.4 13.8 10.6 13.8 9.2C13.8 7.6 15.1 6.5 17 6.5C18.3 6.5 19.3 7.1 19.8 8" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">TypeScript</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Strict Static</text>
+  </g>
+
+  <g transform="translate(698.0, 80)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="158.0" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">電</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <rect x="2" y="2" width="20" height="20" rx="4" fill="#F7DF1E" /><path d="M7 14.8C7.5 15.8 8.4 16.5 9.5 16.5C10.8 16.5 11.5 15.7 11.5 14.2V8.5M13.8 14.8C14.4 15.8 15.6 16.5 17 16.5C18.6 16.5 19.8 15.5 19.8 14.2C19.8 12.8 18.7 12.2 17 11.6C15.2 10.9 14.3 10.2 14.3 8.9C14.3 7.5 15.5 6.5 17.2 6.5C18.5 6.5 19.4 7.1 19.8 8" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">JavaScript</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Async Dynamic</text>
+  </g>
+
+  <!-- Category: 基盤 // RUNTIMES & BACKEND FRAMEWORKS -->
+  <g transform="translate(24, 152)">
+    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">基盤 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// RUNTIMES & BACKEND FRAMEWORKS</tspan></text>
+  </g>
+
+  <g transform="translate(24.0, 170)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">炎</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <path d="M12 4C7.5 4 4 7.5 4 12C4 16.5 7.5 20 12 20C16.5 20 20 16.5 20 12C20 7.5 16.5 4 12 4Z" fill="#FBF0DF" stroke="#D1C3B7" stroke-width="1.2" /><circle cx="9" cy="11" r="1.5" fill="#1C1B19" /><circle cx="15" cy="11" r="1.5" fill="#1C1B19" /><circle cx="7.5" cy="13" r="1.2" fill="#FFAAA6" /><circle cx="16.5" cy="13" r="1.2" fill="#FFAAA6" /><path d="M10.5 14.5C11.2 15.2 12.8 15.2 13.5 14.5" stroke="#1C1B19" stroke-width="1.2" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Bun</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Fast Runtime</text>
+  </g>
+
+  <g transform="translate(234.5, 170)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">網</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <polygon points="12,2 21,7.2 21,17.8 12,23 3,17.8 3,7.2" fill="#339933" /><path d="M7.5 16V9.5L12 7L16.5 9.5V14.5L12 17L9.5 15.5V11.5L14.5 9V13.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Node.js</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Event Driven</text>
+  </g>
+
+  <g transform="translate(445.0, 170)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">迅</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <circle cx="12" cy="12" r="10" fill="#009688" /><path d="M13 3L6 13H12L11 21L18 11H12L13 3Z" fill="#FFFFFF" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">FastAPI</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">High Perf APIs</text>
+  </g>
+
+  <g transform="translate(655.5, 170)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">瓶</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <path d="M10 3V8L5 18C4 20 5.5 21.5 7.5 21.5H16.5C18.5 21.5 20 20 19 18L14 8V3H10Z" fill="none" stroke="{category_sub_fill}" stroke-width="1.8" /><path d="M6.5 16C8 15 11 17 13 16C15 15 16.5 15.5 17.5 16" stroke="{category_sub_fill}" stroke-width="1.5" stroke-linecap="round" fill="none" /><circle cx="10" cy="18" r="1" fill="{category_sub_fill}" /><circle cx="14" cy="17.5" r="0.8" fill="{category_sub_fill}" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Flask</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Micro Engine</text>
+  </g>
+
+  <!-- Category: 知能 // ARTIFICIAL INTELLIGENCE & DATA -->
+  <g transform="translate(24, 242)">
+    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">知能 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// ARTIFICIAL INTELLIGENCE & DATA</tspan></text>
+  </g>
+
+  <g transform="translate(24.0, 260)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">鎖</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <rect x="2" y="2" width="20" height="20" rx="5" fill="#1C3C3C" /><path d="M6 14L10 10M14 10L18 14M8 12C8 9.5 10.5 7 13 7M11 17C13.5 17 16 14.5 16 12" stroke="#2ED1A2" stroke-width="1.8" stroke-linecap="round" fill="none" /><circle cx="14" cy="9" r="1.5" fill="#2ED1A2" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">LangChain</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Agent Chains</text>
+  </g>
+
+  <g transform="translate(234.5, 260)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">索</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <circle cx="12" cy="12" r="10" fill="#1E1E2E" stroke="{gold_accent}" stroke-width="1.2" /><circle cx="12" cy="12" r="6" stroke="#E0503D" stroke-width="1" stroke-dasharray="2 2" fill="none" /><circle cx="12" cy="12" r="2.5" fill="{gold_accent}" /><path d="M12 2V6M12 18V22M2 12H6M18 12H22" stroke="{gold_accent}" stroke-width="1.2" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">RAG & Ollama</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Vector Search</text>
+  </g>
+
+  <g transform="translate(445.0, 260)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">智</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <circle cx="9" cy="9" r="6" fill="#F89939" opacity="0.85" /><circle cx="15" cy="15" r="6" fill="#3499CD" opacity="0.85" /><path d="M6 18L18 6" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">scikit-learn</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Predictive ML</text>
+  </g>
+
+  <g transform="translate(655.5, 260)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">算</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <rect x="3" y="4" width="4" height="16" rx="2" fill="#150458" /><rect x="8" y="7" width="4" height="13" rx="2" fill="#E70488" /><rect x="13" y="4" width="4" height="16" rx="2" fill="#00A3E0" /><rect x="18" y="9" width="3" height="11" rx="1.5" fill="#FFD43B" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Pandas</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Data Frames</text>
+  </g>
+
+  <!-- Category: 兵站 // STORAGE, TOOLS & INFRASTRUCTURE -->
+  <g transform="translate(24, 332)">
+    <text x="0" y="10" class="font-jp" font-size="12" font-weight="700" fill="#E8E3D8">兵站 <tspan class="font-mono" font-size="9.5" font-weight="400" fill="#8C867B">// STORAGE, TOOLS & INFRASTRUCTURE</tspan></text>
+  </g>
+
+  <g transform="translate(24.0, 350)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">葉</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <path d="M12 2C12 2 6 7 6 13C6 17 8.5 20.5 12 22C15.5 20.5 18 17 18 13C18 7 12 2 12 2Z" fill="#13AA52" /><path d="M12 3V21C11.5 20.5 11 19 11 13C11 8 12 3 12 3Z" fill="#116149" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">MongoDB</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Document NoSQL</text>
+  </g>
+
+  <g transform="translate(234.5, 350)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">魚</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <circle cx="12" cy="12" r="10" fill="#00758F" /><path d="M7 15C9 13.5 11 13 14 13.5C16 14 17.5 13 18 11.5C18.5 10 17.5 9 15.5 9C13 9 11.5 11 9 11.5C7.5 11.8 6.5 11 6 10" stroke="#F29111" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">MySQL</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Relational SQL</text>
+  </g>
+
+  <g transform="translate(445.0, 350)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">枝</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <rect x="3" y="3" width="18" height="18" rx="4" transform="rotate(45 12 12)" fill="#F05032" /><path d="M12 7V17M12 12L15 9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" /><circle cx="12" cy="7" r="2" fill="#FFFFFF" /><circle cx="12" cy="17" r="2" fill="#FFFFFF" /><circle cx="15" cy="9" r="2" fill="#FFFFFF" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Git & GitHub</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Version Tree</text>
+  </g>
+
+  <g transform="translate(655.5, 350)" class="skill-tile" filter="url(#tile-shadow)">
+    <!-- Base Tile -->
+    <rect x="0" y="0" width="200.5" height="46" rx="8" fill="#191624" stroke="#2B2638" stroke-width="1.1" />
+    
+    <!-- Japanese Hanko Stamp (Kanji Seal) -->
+    <rect x="7" y="8" width="30" height="30" rx="5" fill="#E0503D" />
+    <text x="22" y="28" class="font-jp" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">極</text>
+    
+    <!-- Tech Logo Vector -->
+    <g transform="translate(44, 11)">
+      <rect x="2" y="2" width="20" height="20" rx="4" fill="#222222" /><path d="M6 7L10 11L6 15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" /><line x1="12" y1="15" x2="18" y2="15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" />
+    </g>
+
+    <!-- Labels -->
+    <text x="74" y="22" class="font-mono" font-size="11.5" font-weight="700" fill="#E8E3D8">Linux & OS</text>
+    <text x="74" y="34" class="font-mono" font-size="8.5" fill="#8C867B">Kernel Runtime</text>
+  </g>
+</svg>
