@@ -1,11 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="100%" height="300" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" height="340" fill="none">
   <defs>
-    <!-- Background Gradient: Deep Sumi Night -->
-    <linearGradient id="bg-sumi-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Background Gradient -->
+    
+    <linearGradient id="bg-sumi" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0E0D13" />
       <stop offset="60%" stop-color="#15131C" />
       <stop offset="100%" stop-color="#1A1824" />
     </linearGradient>
+    
 
     <!-- Moon Glow Gradient -->
     <radialGradient id="moon-glow" cx="50%" cy="50%" r="50%">
@@ -35,19 +37,19 @@
       0% { transform: translate(0px, -20px) rotate(0deg) scale(0.7); opacity: 0; }
       15% { opacity: 0.85; }
       85% { opacity: 0.8; }
-      100% { transform: translate(-260px, 320px) rotate(420deg) scale(0.7); opacity: 0; }
+      100% { transform: translate(-260px, 360px) rotate(420deg) scale(0.7); opacity: 0; }
     }
     @keyframes petal-fall-2 {
       0% { transform: translate(0px, -20px) rotate(45deg) scale(0.9); opacity: 0; }
       20% { opacity: 0.9; }
       80% { opacity: 0.85; }
-      100% { transform: translate(-320px, 330px) rotate(-380deg) scale(0.9); opacity: 0; }
+      100% { transform: translate(-320px, 370px) rotate(-380deg) scale(0.9); opacity: 0; }
     }
     @keyframes petal-fall-3 {
       0% { transform: translate(0px, -20px) rotate(90deg) scale(0.6); opacity: 0; }
       25% { opacity: 0.75; }
       90% { opacity: 0.7; }
-      100% { transform: translate(-220px, 310px) rotate(540deg) scale(0.6); opacity: 0; }
+      100% { transform: translate(-220px, 350px) rotate(540deg) scale(0.6); opacity: 0; }
     }
     @keyframes cursor-blink {
       0%, 49% { opacity: 1; }
@@ -80,16 +82,16 @@
   </style>
 
   <!-- Canvas Container with Rounded Borders -->
-  <rect x="0" y="0" width="880" height="300" rx="14" fill="url(#bg-sumi-dark)" stroke="#262230" stroke-width="1.5" />
+  <rect x="0" y="0" width="880" height="340" rx="14" fill="url(#bg-sumi)" stroke="#262230" stroke-width="1.5" />
 
   <!-- Mount Fuji Silhouette & Snow Cap -->
-  <g opacity="0.45" transform="translate(480, 70)">
+  <g opacity="0.45" transform="translate(480, 90)">
     <!-- Base Mountain Cone -->
-    <path d="M 0,225 L 140,55 L 165,55 L 305,225 Z" fill="#1B1924" />
+    <path d="M 0,245 L 140,60 L 165,60 L 305,245 Z" fill="#1B1924" />
     <!-- Snowcap with serrated ridge lines -->
-    <path d="M 140,55 L 165,55 L 195,95 L 178,110 L 160,98 L 145,115 L 125,92 L 110,105 Z" fill="#E8E3D8" opacity="0.32" />
+    <path d="M 140,60 L 165,60 L 195,100 L 178,115 L 160,103 L 145,120 L 125,97 L 110,110 Z" fill="#E8E3D8" opacity="0.32" />
     <!-- Center mountain crest crease -->
-    <line x1="152" y1="55" x2="152" y2="225" stroke="#14131A" stroke-width="1.5" />
+    <line x1="152" y1="60" x2="152" y2="245" stroke="#14131A" stroke-width="1.5" />
   </g>
 
   <!-- Luminous Crescent Moon -->
@@ -101,25 +103,25 @@
 
   <!-- Seigaiha (Traditional Waves) at bottom edge -->
   <g opacity="0.22" stroke="#3A3448" stroke-width="1" fill="none">
-    <path d="M 0,295 A 30,30 0 0,1 60,295 M 10,295 A 20,20 0 0,1 50,295 M 20,295 A 10,10 0 0,1 40,295" />
-    <path d="M 60,295 A 30,30 0 0,1 120,295 M 70,295 A 20,20 0 0,1 110,295 M 80,295 A 10,10 0 0,1 100,295" />
-    <path d="M 120,295 A 30,30 0 0,1 180,295 M 130,295 A 20,20 0 0,1 170,295 M 140,295 A 10,10 0 0,1 160,295" />
-    <path d="M 180,295 A 30,30 0 0,1 240,295 M 190,295 A 20,20 0 0,1 230,295 M 200,295 A 10,10 0 0,1 220,295" />
-    <path d="M 240,295 A 30,30 0 0,1 300,295 M 250,295 A 20,20 0 0,1 290,295 M 260,295 A 10,10 0 0,1 280,295" />
-    <path d="M 300,295 A 30,30 0 0,1 360,295 M 310,295 A 20,20 0 0,1 350,295 M 320,295 A 10,10 0 0,1 340,295" />
-    <path d="M 360,295 A 30,30 0 0,1 420,295 M 370,295 A 20,20 0 0,1 410,295 M 380,295 A 10,10 0 0,1 400,295" />
-    <path d="M 420,295 A 30,30 0 0,1 480,295 M 430,295 A 20,20 0 0,1 470,295 M 440,295 A 10,10 0 0,1 460,295" />
-    <path d="M 480,295 A 30,30 0 0,1 540,295 M 490,295 A 20,20 0 0,1 530,295 M 500,295 A 10,10 0 0,1 520,295" />
-    <path d="M 540,295 A 30,30 0 0,1 600,295 M 550,295 A 20,20 0 0,1 590,295 M 560,295 A 10,10 0 0,1 580,295" />
-    <path d="M 600,295 A 30,30 0 0,1 660,295 M 610,295 A 20,20 0 0,1 650,295 M 620,295 A 10,10 0 0,1 640,295" />
-    <path d="M 660,295 A 30,30 0 0,1 720,295 M 670,295 A 20,20 0 0,1 710,295 M 680,295 A 10,10 0 0,1 700,295" />
-    <path d="M 720,295 A 30,30 0 0,1 780,295 M 730,295 A 20,20 0 0,1 770,295 M 740,295 A 10,10 0 0,1 760,295" />
-    <path d="M 780,295 A 30,30 0 0,1 840,295 M 790,295 A 20,20 0 0,1 830,295 M 800,295 A 10,10 0 0,1 820,295" />
-    <path d="M 840,295 A 30,30 0 0,1 900,295 M 850,295 A 20,20 0 0,1 890,295 M 860,295 A 10,10 0 0,1 880,295" />
+    <path d="M 0,335 A 30,30 0 0,1 60,335 M 10,335 A 20,20 0 0,1 50,335 M 20,335 A 10,10 0 0,1 40,335" />
+    <path d="M 60,335 A 30,30 0 0,1 120,335 M 70,335 A 20,20 0 0,1 110,335 M 80,335 A 10,10 0 0,1 100,335" />
+    <path d="M 120,335 A 30,30 0 0,1 180,335 M 130,335 A 20,20 0 0,1 170,335 M 140,335 A 10,10 0 0,1 160,335" />
+    <path d="M 180,335 A 30,30 0 0,1 240,335 M 190,335 A 20,20 0 0,1 230,335 M 200,335 A 10,10 0 0,1 220,335" />
+    <path d="M 240,335 A 30,30 0 0,1 300,335 M 250,335 A 20,20 0 0,1 290,335 M 260,335 A 10,10 0 0,1 280,335" />
+    <path d="M 300,335 A 30,30 0 0,1 360,335 M 310,335 A 20,20 0 0,1 350,335 M 320,335 A 10,10 0 0,1 340,335" />
+    <path d="M 360,335 A 30,30 0 0,1 420,335 M 370,335 A 20,20 0 0,1 410,335 M 380,335 A 10,10 0 0,1 400,335" />
+    <path d="M 420,335 A 30,30 0 0,1 480,335 M 430,335 A 20,20 0 0,1 470,335 M 440,335 A 10,10 0 0,1 460,335" />
+    <path d="M 480,335 A 30,30 0 0,1 540,335 M 490,335 A 20,20 0 0,1 530,335 M 500,335 A 10,10 0 0,1 520,335" />
+    <path d="M 540,335 A 30,30 0 0,1 600,335 M 550,335 A 20,20 0 0,1 590,335 M 560,335 A 10,10 0 0,1 580,335" />
+    <path d="M 600,335 A 30,30 0 0,1 660,335 M 610,335 A 20,20 0 0,1 650,335 M 620,335 A 10,10 0 0,1 640,335" />
+    <path d="M 660,335 A 30,30 0 0,1 720,335 M 670,335 A 20,20 0 0,1 710,335 M 680,335 A 10,10 0 0,1 700,335" />
+    <path d="M 720,335 A 30,30 0 0,1 780,335 M 730,335 A 20,20 0 0,1 770,335 M 740,335 A 10,10 0 0,1 760,335" />
+    <path d="M 780,335 A 30,30 0 0,1 840,335 M 790,335 A 20,20 0 0,1 830,335 M 800,335 A 10,10 0 0,1 820,335" />
+    <path d="M 840,335 A 30,30 0 0,1 900,335 M 850,335 A 20,20 0 0,1 890,335 M 860,335 A 10,10 0 0,1 880,335" />
   </g>
 
   <!-- Vermilion Torii Gate (Architectural Icon) -->
-  <g class="torii-animated" transform="translate(735, 120)">
+  <g class="torii-animated" transform="translate(735, 140)">
     <!-- Top curved roof beam (Kasagi) -->
     <path d="M -42,0 C -20,-5 20,-5 42,0 L 40,7 C 20,3 -20,3 -40,7 Z" fill="url(#torii-red)" />
     <!-- Secondary straight beam (Nuki) -->
@@ -128,12 +130,12 @@
     <rect x="-5" y="7" width="10" height="9" fill="#14131A" stroke="#E0503D" stroke-width="0.8" />
     <text x="0" y="14" fill="#E8E3D8" font-size="6" text-anchor="middle" font-weight="700">道</text>
     <!-- Left Column (Hashira) -->
-    <polygon points="-24,16 -21,110 -27,110 -24,16" fill="url(#torii-red)" />
+    <polygon points="-24,16 -21,125 -27,125 -24,16" fill="url(#torii-red)" />
     <!-- Right Column (Hashira) -->
-    <polygon points="24,16 27,110 21,110 24,16" fill="url(#torii-red)" />
+    <polygon points="24,16 27,125 21,125 24,16" fill="url(#torii-red)" />
     <!-- Base Pedestals (Kamebara) -->
-    <rect x="-29" y="108" width="10" height="4" rx="1" fill="#2E2B38" />
-    <rect x="19" y="108" width="10" height="4" rx="1" fill="#2E2B38" />
+    <rect x="-29" y="123" width="10" height="4" rx="1" fill="#2E2B38" />
+    <rect x="19" y="123" width="10" height="4" rx="1" fill="#2E2B38" />
     <!-- Hanging Lantern with warm glow -->
     <g transform="translate(0, 24)">
       <circle cx="0" cy="12" r="10" fill="#E0503D" opacity="0.25" />
@@ -148,52 +150,67 @@
     <!-- Traditional Vertical Text: 電脳開拓 (Cyber Pioneer) -->
     <text x="0" y="24" class="font-kanji" font-size="16" fill="#8C867B" letter-spacing="6" opacity="0.8" writing-mode="vertical-rl">電脳開拓</text>
     <text x="24" y="24" class="font-mono" font-size="7.5" fill="#6B655D" letter-spacing="2" writing-mode="vertical-rl">CYBER PIONEER</text>
-    <line x1="10" y1="135" x2="10" y2="200" stroke="#2E2B38" stroke-width="1" stroke-dasharray="3 3" />
-    <text x="0" y="212" class="font-kanji" font-size="11" fill="#E0503D" opacity="0.9" writing-mode="vertical-rl">匠心</text>
-    <text x="20" y="212" class="font-mono" font-size="7" fill="#E0503D" opacity="0.8" writing-mode="vertical-rl">CRAFT</text>
+    <line x1="10" y1="135" x2="10" y2="230" stroke="#2E2B38" stroke-width="1" stroke-dasharray="3 3" />
+    <text x="0" y="242" class="font-kanji" font-size="11" fill="#E0503D" opacity="0.9" writing-mode="vertical-rl">自己紹介</text>
+    <text x="20" y="242" class="font-mono" font-size="7" fill="#E0503D" opacity="0.8" writing-mode="vertical-rl">ABOUT</text>
   </g>
 
   <!-- Divider Hairline -->
-  <line x1="84" y1="36" x2="84" y2="264" stroke="#25212E" stroke-width="1" />
+  <line x1="84" y1="36" x2="84" y2="304" stroke="#25212E" stroke-width="1" />
 
   <!-- Main Hero Content -->
   <g transform="translate(108, 0)">
-    <!-- Sub-badge with live indicator -->
-    <g transform="translate(0, 48)">
-      <rect x="0" y="0" width="198" height="22" rx="4" fill="#1A1822" stroke="#2D2838" stroke-width="1" />
+    <!-- Sub-badge with live indicator and degree info -->
+    <g transform="translate(0, 34)">
+      <rect x="0" y="0" width="310" height="22" rx="4" fill="#1A1822" stroke="#2D2838" stroke-width="1" />
       <circle cx="11" cy="11" r="3.5" fill="#E0503D">
         <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
       </circle>
-      <text x="22" y="15" class="font-mono" font-size="10.5" fill="#8C867B" letter-spacing="1.2">SYSTEM // ACTIVE_RUNNER</text>
+      <text x="22" y="15" class="font-mono" font-size="10" fill="#8C867B" letter-spacing="1">4TH-YEAR B.TECH CE · AKTU (2023–PRESENT)</text>
     </g>
 
     <!-- Master Name in Classical Serif & Spaced Tracking -->
-    <text x="0" y="104" class="font-serif" font-size="34" font-weight="600" fill="#E8E3D8" letter-spacing="5">PRATYAKSH TOMAR</text>
+    <text x="0" y="86" class="font-serif" font-size="34" font-weight="600" fill="#E8E3D8" letter-spacing="5">PRATYAKSH TOMAR</text>
 
     <!-- Japanese Katakana Transliteration with English -->
-    <text x="2" y="128" class="font-mono" font-size="11" fill="#8C867B" letter-spacing="1">NEW DELHI  ·  <tspan class="font-kanji">プラチャクシュ・トマール</tspan> (PRATYAKSH TOMAR)</text>
-
-    <!-- Monospace Role & Engineering Domain -->
-    <text x="2" y="158" class="font-mono" font-size="12.5" fill="#C5BFB5" letter-spacing="1">
-      <tspan fill="#E0503D">&gt;</tspan> AUTONOMOUS AGENT LOOPS  ·  BUN/TYPESCRIPT  ·  APPLIED ML
+    <text x="2" y="110" class="font-mono" font-size="11" fill="#8C867B" letter-spacing="1">
+      NEW DELHI  ·  <tspan class="font-kanji">プラチャクシュ・トマール</tspan> (PRATYAKSH TOMAR)
     </text>
 
-    <!-- Live Terminal Command Card -->
-    <g transform="translate(0, 184)">
-      <rect x="0" y="0" width="530" height="42" rx="6" fill="#111017" stroke="#2A2536" stroke-width="1.2" />
+    <!-- Monospace Role & Engineering Domain (User's Exact Bio Headline) -->
+    <text x="2" y="136" class="font-mono" font-size="12" fill="#C5BFB5" letter-spacing="0.8">
+      <tspan fill="#E0503D">&gt;</tspan> SOFTWARE DEVELOPER  ·  AI/ML &amp; DATA SCIENCE ENTHUSIAST
+    </text>
+
+    <!-- Terminal Prompt Card with Blinking Cursor and Practical Philosophy -->
+    <g transform="translate(0, 156)">
+      <rect x="0" y="0" width="530" height="98" rx="8" fill="#111017" stroke="#2A2536" stroke-width="1.2" />
+      
       <!-- Terminal Window Buttons -->
-      <circle cx="16" cy="21" r="3" fill="#E0503D" opacity="0.8" />
-      <circle cx="28" cy="21" r="3" fill="#E5A93C" opacity="0.6" />
-      <circle cx="40" cy="21" r="3" fill="#48B369" opacity="0.6" />
-      <!-- Command Text -->
-      <text x="60" y="25" class="font-mono" font-size="11.5" fill="#8C867B">
-        <tspan fill="#E8E3D8">clawnest</tspan> --runtime=<tspan fill="#E0503D">bun</tspan> --mode=<tspan fill="#E8E3D8">autonomous</tspan> --diff-gate=<tspan fill="#48B369">enforced</tspan><tspan class="blink" fill="#E0503D">_</tspan>
+      <circle cx="16" cy="18" r="3" fill="#E0503D" opacity="0.8" />
+      <circle cx="28" cy="18" r="3" fill="#E5A93C" opacity="0.6" />
+      <circle cx="40" cy="18" r="3" fill="#48B369" opacity="0.6" />
+      
+      <!-- Terminal Execution Title -->
+      <text x="56" y="21" class="font-mono" font-size="10.5" fill="#8C867B">aktu.student --focus="Software_Engineering + Intelligent_Systems"</text>
+      
+      <line x1="12" y1="32" x2="518" y2="32" stroke="#1D1B26" stroke-width="1" />
+      
+      <!-- User's Philosophy & Bio Message -->
+      <text x="18" y="52" class="font-mono" font-size="11" fill="#E8E3D8">
+        "Building practical systems at the intersection of software
+      </text>
+      <text x="18" y="69" class="font-mono" font-size="11" fill="#E8E3D8">
+        engineering and AI — from autonomous agent loops &amp; tools
+      </text>
+      <text x="18" y="86" class="font-mono" font-size="11" fill="#E8E3D8">
+        to machine learning applications &amp; data-driven solutions."<tspan class="blink" fill="#E0503D">_</tspan>
       </text>
     </g>
 
-    <!-- Telemetry Status Line -->
-    <text x="2" y="254" class="font-mono" font-size="10.5" fill="#6B655D" letter-spacing="1">
-      STATUS: COLD CHAI  ·  SILENT HOUSE  ·  400+ ALGORITHMIC PROOFS  ·  730+ COMMITS
+    <!-- Telemetry Status Line (University & Core Competencies) -->
+    <text x="2" y="282" class="font-mono" font-size="10" fill="#6B655D" letter-spacing="0.8">
+      DR. A.P.J. ABDUL KALAM TECHNICAL UNIVERSITY  ·  AI AGENTS  ·  400+ DSA  ·  730+ COMMITS
     </text>
   </g>
 
