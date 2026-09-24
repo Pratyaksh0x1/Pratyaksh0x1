@@ -7,21 +7,11 @@
 </p>
 
 <p align="center">
-  <a href="https://pratyaksh0x1.github.io/Pratyaksh0x1/" target="_blank" title="Click to open the Midnight Ambient Cyber Player in background">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/radio-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/radio-light.svg">
-      <img alt="Midnight Audio Transmission" src="./assets/radio-dark.svg" width="100%">
-    </picture>
-  </a>
-  <br>
-  <a href="https://pratyaksh0x1.github.io/Pratyaksh0x1/" target="_blank">
-    <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8F_PLAY_AMBIENT_AUDIO-Nandemonaiya_(Low_Volume)-E0503D?style=for-the-badge&logo=applemusic&logoColor=white" alt="Play Ambient Audio in Low Volume">
-  </a>
-  &nbsp;
-  <a href="https://pratyaksh0x1.github.io/Pratyaksh0x1/" target="_blank">
-    <img src="https://img.shields.io/badge/%E2%8F%B8%EF%B8%8F_PAUSE_%2F_CONTROLS-Player_Dashboard-161420?style=for-the-badge&logo=soundcharts&logoColor=E0503D" alt="Pause / Controls">
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/radio-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/radio-light.svg">
+    <img alt="Midnight Audio Transmission" src="./assets/radio-dark.svg" width="100%">
+  </picture>
 </p>
 
 <p align="center">
@@ -32,41 +22,7 @@
   </picture>
 </p>
 
-### ⛩️ Identity &amp; Philosophy (自己紹介 // About Me)
 
-<table align="center" border="0" style="border: none; background: transparent; width: 100%;">
-  <tr>
-    <td width="30%" align="center" valign="middle" style="border: none;">
-      <a href="https://github.com/Pratyaksh0x1">
-        <img src="./assets/avatar-circle.png" width="210" alt="Pratyaksh Tomar // Cyber Samurai Portrait">
-      </a>
-      <br>
-      <sub><b>PRATYAKSH TOMAR</b> · プラチャクシュ (Pratyaksh)</sub>
-      <br>
-      <sub><i>Systems &amp; Autonomous Agent Architect</i></sub>
-    </td>
-    <td width="70%" valign="middle" style="border: none; padding-left: 16px;">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./assets/about-card-dark.svg">
-        <source media="(prefers-color-scheme: light)" srcset="./assets/about-card-light.svg">
-        <img alt="Interactive Telemetry Terminal" src="./assets/about-card-dark.svg" width="100%">
-      </picture>
-    </td>
-  </tr>
-</table>
-
-> *"A blade is forged in fire and polished in silence. Software is no different."*
-> 
-> I write code when the house is quiet—usually past midnight, with cold cutting chai and a clean terminal buffer.
-> Currently studying computer engineering at AKTU. Most of my awake hours go into engineering autonomous agent loops, high-performance runtime tools on Bun and TypeScript, and machine learning pipelines that don't break when feed distributions shift.
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/divider-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg">
-    <img alt="divider" src="./assets/divider-dark.svg" width="100%">
-  </picture>
-</p>
 
 ### ⚡ Live Contribution Activity (活動記録 // Contributions)
 
