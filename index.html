@@ -423,7 +423,7 @@
 
     <h1 class="track-title">なんでもないや (Nandemonaiya)</h1>
     <div class="track-artist">Mone Kamishiraishi (Mitsuha) · 上白石萌音</div>
-    <div class="track-subtitle">Low Ambient Volume (20%) · Cold Chai on Loop</div>
+    <div class="track-subtitle">High-Fidelity Cyber Lo-Fi · RADWIMPS (Your Name)</div>
 
     <!-- Frequency Waveform Canvas -->
     <canvas id="visualizer" width="560" height="60"></canvas>
@@ -431,11 +431,12 @@
     <div class="controls">
       <button class="btn-play-pause" id="playBtn" aria-label="Play or Pause">▶</button>
     </div>
+    <div id="statusText" style="font-size: 11px; margin-bottom: 16px; color: var(--muted); letter-spacing: 0.8px;">● Click Play to Listen</div>
 
     <div class="volume-container">
-      <span>🔈 20%</span>
-      <input type="range" id="volRange" min="0" max="100" value="20" aria-label="Volume Slider">
-      <span>🔊</span>
+      <span>🔈</span>
+      <input type="range" id="volRange" min="0" max="100" value="75" aria-label="Volume Slider">
+      <span id="volLabel">🔊 75%</span>
     </div>
 
     <div>
@@ -452,13 +453,15 @@
     const audio = document.getElementById('audioTrack');
     const playBtn = document.getElementById('playBtn');
     const volRange = document.getElementById('volRange');
+    const volLabel = document.getElementById('volLabel');
+    const statusText = document.getElementById('statusText');
     const wheelLeft = document.getElementById('wheel-left');
     const wheelRight = document.getElementById('wheel-right');
     const canvas = document.getElementById('visualizer');
     const ctx = canvas.getContext('2d');
 
-    // Default to soft 20% volume
-    audio.volume = 0.20;
+    // Default to clear, rich 75% volume
+    audio.volume = 0.75;
 
     let audioCtx = null;
     let analyser = null;
@@ -467,34 +470,54 @@
 
     function initAudioContext() {
       if (!audioCtx) {
-        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        analyser = audioCtx.createAnalyser();
-        analyser.fftSize = 64;
-        sourceNode = audioCtx.createMediaElementSource(audio);
-        sourceNode.connect(analyser);
-        analyser.connect(audioCtx.destination);
+        try {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (AudioContextClass) {
+            audioCtx = new AudioContextClass();
+            analyser = audioCtx.createAnalyser();
+            analyser.fftSize = 64;
+            sourceNode = audioCtx.createMediaElementSource(audio);
+            sourceNode.connect(analyser);
+            analyser.connect(audioCtx.destination);
+          }
+        } catch (e) {
+          console.warn("Web Audio API routing bypassed (standard HTML5 audio playback active):", e);
+          analyser = null;
+          sourceNode = null;
+        }
       }
     }
 
     function togglePlay() {
       initAudioContext();
-      if (audioCtx.state === 'suspended') {
-        audioCtx.resume();
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume().catch(() => {});
       }
 
+      audio.volume = volRange.value / 100;
+
       if (audio.paused) {
-        audio.play().then(() => {
-          isPlaying = true;
-          playBtn.innerHTML = '⏸';
-          wheelLeft.classList.remove('paused');
-          wheelRight.classList.remove('paused');
-        }).catch(err => {
-          console.log('Playback error:', err);
-        });
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            isPlaying = true;
+            playBtn.innerHTML = '⏸';
+            statusText.innerHTML = '● NOW PLAYING · Nandemonaiya // RADWIMPS';
+            statusText.style.color = '#48B369';
+            wheelLeft.classList.remove('paused');
+            wheelRight.classList.remove('paused');
+          }).catch(err => {
+            console.error('Audio playback error:', err);
+            statusText.innerHTML = '⚠️ Playback blocked by browser. Click Play directly.';
+            statusText.style.color = '#E0503D';
+          });
+        }
       } else {
         audio.pause();
         isPlaying = false;
         playBtn.innerHTML = '▶';
+        statusText.innerHTML = '● PAUSED · Click Play to Resume';
+        statusText.style.color = 'var(--muted)';
         wheelLeft.classList.add('paused');
         wheelRight.classList.add('paused');
       }
@@ -502,7 +525,7 @@
 
     playBtn.addEventListener('click', togglePlay);
 
-    // Auto-start on first user interaction anywhere on page
+    // Auto-start on first user click anywhere on page
     document.addEventListener('click', function autoStarter(e) {
       if (e.target !== playBtn && audio.paused) {
         togglePlay();
@@ -521,6 +544,7 @@
     volRange.addEventListener('input', (e) => {
       const vol = e.target.value / 100;
       audio.volume = vol;
+      volLabel.innerText = '🔊 ' + e.target.value + '%';
     });
 
     // Draw Visualizer Equalizer
@@ -529,13 +553,24 @@
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       if (!analyser || audio.paused) {
-        // Draw resting ambient bars
         const numBars = 32;
         const barWidth = (canvas.width / numBars) - 4;
+        const isCurrentlyPlaying = !audio.paused;
+
         for (let i = 0; i < numBars; i++) {
           const x = i * (barWidth + 4);
-          const barHeight = 4 + Math.sin(Date.now() * 0.003 + i) * 3;
-          ctx.fillStyle = 'rgba(224, 80, 61, 0.25)';
+          let barHeight;
+          if (isCurrentlyPlaying) {
+            // High-energy pulsing equalizer bars when audio is playing
+            barHeight = 8 + Math.abs(Math.sin(Date.now() * 0.007 + i * 0.35)) * 42;
+            const grad = ctx.createLinearGradient(0, canvas.height, 0, 0);
+            grad.addColorStop(0, '#E0503D');
+            grad.addColorStop(1, '#FFE57F');
+            ctx.fillStyle = grad;
+          } else {
+            barHeight = 4 + Math.sin(Date.now() * 0.003 + i) * 3;
+            ctx.fillStyle = 'rgba(224, 80, 61, 0.25)';
+          }
           ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
         }
         return;
