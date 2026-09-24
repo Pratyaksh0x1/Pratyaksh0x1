@@ -205,11 +205,11 @@ def generate_banner(theme="dark"):
   <g transform="translate(108, 0)">
     <!-- Sub-badge with live indicator and degree info -->
     <g transform="translate(0, 34)">
-      <rect x="0" y="0" width="310" height="22" rx="4" fill="{badge_bg}" stroke="{badge_border}" stroke-width="1" />
+      <rect x="0" y="0" width="318" height="22" rx="4" fill="{badge_bg}" stroke="{badge_border}" stroke-width="1" />
       <circle cx="11" cy="11" r="3.5" fill="{accent_red}">
         <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
       </circle>
-      <text x="22" y="15" class="font-mono" font-size="10" fill="{text_muted}" letter-spacing="1">4TH-YEAR B.TECH CE · AKTU (2023–PRESENT)</text>
+      <text x="22" y="15" class="font-mono" font-size="10" fill="{text_muted}" letter-spacing="1">4TH-YEAR B.TECH CSE · AKTU (2023–PRESENT)</text>
     </g>
 
     <!-- Master Name in Classical Serif & Spaced Tracking -->
@@ -251,9 +251,9 @@ def generate_banner(theme="dark"):
       </text>
     </g>
 
-    <!-- Telemetry Status Line (University & Core Competencies) -->
+    <!-- Telemetry Status Line (University & Technical Focus) -->
     <text x="2" y="282" class="font-mono" font-size="10" fill="{text_dim}" letter-spacing="0.8">
-      DR. A.P.J. ABDUL KALAM TECHNICAL UNIVERSITY  ·  AI AGENTS  ·  400+ DSA  ·  730+ COMMITS
+      DR. A.P.J. ABDUL KALAM TECHNICAL UNIVERSITY (AKTU)  ·  INTELLIGENT SYSTEMS  ·  AI &amp; ML
     </text>
   </g>
 

@@ -85,7 +85,7 @@
   </a>
   &nbsp;
   <a href="https://leetcode.com/u/PratyakshTomar/" target="_blank" title="View LeetCode Profile">
-    <img src="https://img.shields.io/badge/LEETCODE-算法_400+_Solved-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode">
+    <img src="https://img.shields.io/badge/LEETCODE-算法_Algorithms-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode">
   </a>
   &nbsp;
   <a href="https://github.com/Pratyaksh0x1/ClawNest" target="_blank" title="View Top Repository ClawNest">
