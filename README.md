@@ -24,13 +24,6 @@
 
 ### ⚡ Live Contribution Activity (活動記録 // Contributions)
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/animated-contributions-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/animated-contributions-light.svg">
-    <img alt="Real 734+ Contributions Heatmap &amp; Cyber Snake" src="./assets/animated-contributions-dark.svg" width="100%">
-  </picture>
-</p>
 
 <p align="center">
   <picture>
