@@ -135,8 +135,8 @@ def generate_svg(theme="dark"):
                     "logo": '''<rect x="3" y="3" width="18" height="18" rx="4" transform="rotate(45 12 12)" fill="#F05032" /><path d="M12 7V17M12 12L15 9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" /><circle cx="12" cy="7" r="2" fill="#FFFFFF" /><circle cx="12" cy="17" r="2" fill="#FFFFFF" /><circle cx="15" cy="9" r="2" fill="#FFFFFF" />'''
                 },
                 {
-                    "kanji": "極", "name": "Linux &amp; OS", "sub": "Kernel Runtime",
-                    "logo": f'''<rect x="2" y="2" width="20" height="20" rx="4" fill="#222222" /><path d="M6 7L10 11L6 15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" /><line x1="12" y1="15" x2="18" y2="15" stroke="{category_sub_fill}" stroke-width="2" stroke-linecap="round" />'''
+                    "kanji": "通", "name": "REST APIs", "sub": "HTTP Endpoints",
+                    "logo": f'''<rect x="2" y="2" width="20" height="20" rx="4" fill="#005571" /><text x="12" y="15" font-family="monospace" font-size="8" font-weight="700" fill="#FFFFFF" text-anchor="middle">API</text>'''
                 }
             ]
         }
