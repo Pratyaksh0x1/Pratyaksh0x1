@@ -20,7 +20,7 @@ Currently studying computer engineering at AKTU. Most of my awake hours go into 
 
 ### selected work
 
-**[ClawNest](https://github.com/PratakshTomar)** `TypeScript` · `Bun` · `OpenRouter API` · `Telegram Bot`
+**[ClawNest](https://github.com/Pratyaksh0x1/ClawNest)** `TypeScript` · `Bun` · `OpenRouter API` · `Telegram Bot`
 - *The Problem:* Most AI agent demos are fragile prompt wrappers that choke as soon as they run actual filesystem or shell commands.
 - *The Twist:* Built an autonomous loop on Bun with modular tool executors and remote Telegram dispatch. During testing, an early prompt regression caused the agent to attempt editing its own execution loop.
 - *The Result:* Engineered a mandatory git-diff preview approval gate. Every single write is diffed and held for review before disk commit. Added goal decomposition, token failovers, and citation-backed codebase Q&A.
@@ -33,12 +33,12 @@ Currently studying computer engineering at AKTU. Most of my awake hours go into 
   </picture>
 </p>
 
-**[California Housing Predictor](https://github.com/PratakshTomar)** `Python` · `Flask` · `scikit-learn` · `Chart.js` · `Pandas`
+**[California Housing Predictor](https://github.com/Pratyaksh0x1)** `Python` · `Flask` · `scikit-learn` · `Chart.js` · `Pandas`
 - *The Problem:* Real estate regression models degrade rapidly if skewed income categories and regional proximity outliers aren't handled before fitting.
 - *The Twist:* Built a preprocessing pipeline across 20,640 records using median imputation and stratified sampling on income strata, tuning a Random Forest Regressor to capture spatial non-linearities.
 - *The Result:* Achieved an $R^2$ of 0.83 with MAE under $30.9K. Deployed a Flask REST API with batch CSV drag-and-drop inference and an interactive Chart.js evaluation dashboard for residual diagnostics.
 
-**[Hackathon Sprints & Policy AI](https://github.com/PratakshTomar)** `Python` · `FastAPI` · `LangChain` · `RAG`
+**[Hackathon Sprints & Policy AI](https://github.com/Pratyaksh0x1)** `Python` · `FastAPI` · `LangChain` · `RAG`
 - *The Problem:* Hackathon AI prototypes often collapse under live evaluation latency or hallucinated references.
 - *The Twist:* Engineered fast, low-overhead retrieval pipelines under strict 24-hour clocks as part of Team Thunders at the National AI/ML Hackathon by AVEVA (IIT Hyderabad) and reached the finals in Policy Conclave '26 at IIT Kanpur.
 - *The Result:* Resilient architectures designed to cite exact ground truth documents instead of guessing.
@@ -88,4 +88,4 @@ foundations    Data Structures, Operating Systems, Computer Networks
 
 <sub>If you are engineering autonomous systems that need to behave, tuning fast runtimes, or debugging past midnight:</sub>
 <br>
-<sub>`Pratyakshtomar2000@gmail.com` · [LinkedIn](https://linkedin.com) · [GitHub](https://github.com/PratakshTomar)</sub>
+<sub>`Pratyakshtomar2000@gmail.com` · [LinkedIn](https://linkedin.com) · [GitHub](https://github.com/Pratyaksh0x1)</sub>
