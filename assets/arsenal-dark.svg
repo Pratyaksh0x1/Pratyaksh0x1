@@ -44,7 +44,7 @@
     <text x="18" y="56" class="font-kanji" font-size="15" font-weight="700" fill="#E8E3D8">低層設計 <tspan class="font-mono" font-size="10.5" font-weight="400" fill="#8C867B">// Systems</tspan></text>
     <text x="18" y="76" class="font-mono" font-size="11" fill="#E0503D">C · C++ · Algorithms</text>
     <line x1="18" y1="92" x2="190" y2="92" stroke="#221E2C" stroke-width="1" />
-    <text x="18" y="114" class="font-mono" font-size="9.5" fill="#6B655D">400+ LEETCODE / CODE360</text>
+    <text x="18" y="114" class="font-mono" font-size="9.5" fill="#6B655D">DATA STRUCTURES &amp; ALGORITHMS</text>
     <text x="18" y="128" class="font-mono" font-size="9.5" fill="#6B655D">MEMORY &amp; CACHE COHERENCE</text>
   </g>
 

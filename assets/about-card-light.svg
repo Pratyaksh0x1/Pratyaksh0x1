@@ -49,7 +49,7 @@
       <tspan fill="#C8382B">$</tspan> cat /proc/stats <tspan fill="#8C867C">// 実績データ (Telemetry Stats)</tspan>
     </text>
     <text x="0" y="112" class="font-mono" font-size="12" fill="#1C1B19">
-      <tspan fill="#C8382B" font-weight="700">734+</tspan> GitHub Commits · <tspan fill="#C8382B" font-weight="700">400+</tspan> LeetCode &amp; Code360 Solved
+      Data Structures &amp; Algorithms · Full-Stack &amp; AI Systems
     </text>
 
     <text x="0" y="140" class="font-mono" font-size="12" fill="#756F67">
